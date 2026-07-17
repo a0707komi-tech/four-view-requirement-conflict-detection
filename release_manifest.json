@@ -56,8 +56,8 @@
       "path": "README.md",
       "category": "project_metadata",
       "source": "generated",
-      "size_bytes": 3996,
-      "sha256": "0536adbdd67e407b53f4106b0fee477ed97e92991292b29bcc3a29dcc3f350a0",
+      "size_bytes": 3867,
+      "sha256": "89e9b18b2d353af349eceb0383e677c96042d14ef8423853a55341f440c31530",
       "record_count": null
     },
     {
@@ -1562,62 +1562,6 @@
       "source": "workspace://src/conflict_detection/runtime/state/store.py",
       "size_bytes": 2620,
       "sha256": "c0eae18dcf87764bb2abbbd1ffc8d1b28e82d9dc74e268ddd137dc8db32b4a84",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_cli_smoke.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 765,
-      "sha256": "cd46da4e322e2b20c85087e07a528ed6d6f6ced3c120af76218523af99bbc82f",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_consensus.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 1805,
-      "sha256": "33df9016b8655502be9ef1b5552c034a2af210d9cbce975e0d53f48427ce7f91",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_exported_results.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 1412,
-      "sha256": "434e3fa350a771ce43aa463ea620b7f5a2ca41dd29dae52c0abbac4323e4e90b",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_metrics.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 952,
-      "sha256": "ebb7fe556ed40f6f713d4062c7a34a98126574c50e090971d277579db5db9926",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_preprocessing_and_routing.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 2053,
-      "sha256": "d50d5a2c450b6a27c064d0a06c0569475b06fa950acdcfee81c93e5e0d0e3193",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_public_configuration.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 1081,
-      "sha256": "c2b8da59dc570447ba0742ce2b725483bc52d86f78df49692ae7ea0a0457bbe3",
-      "record_count": null
-    },
-    {
-      "path": "tests/test_release_scope.py",
-      "category": "tests",
-      "source": "generated",
-      "size_bytes": 324,
-      "sha256": "6f22c84826ccf7888ab8c559e1b5018ae30d14f99cd2a7195d129c3b384e1f54",
       "record_count": null
     }
   ]

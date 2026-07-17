@@ -56,7 +56,7 @@ Dataset schemas, provenance limits, and licensing boundaries are documented in [
 | Broker-All | 0.89 | 0.62 | 0.73 | 0.99 |
 | Library-Gold | 1.00 | 0.85 | 0.92 | 1.00 |
 
-Mean F1 across the five datasets is **0.80**. ETCS-GOLD uses the fourth-round full-framework result. Ablation, baseline, and threshold experiments are intentionally excluded.
+Mean F1 across the five datasets is **0.80**.
 
 The repository includes final verdicts, TP/FP/FN reports, and effective intermediate outputs for all seven agents. See [results/README.md](results/README.md).
 
