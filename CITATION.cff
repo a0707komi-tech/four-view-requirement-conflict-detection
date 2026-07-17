@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or its published results, please cite this repository."
+title: "Four-View Multi-Agent Framework for Requirement Conflict Detection"
+type: software
+version: 1.0.0
+date-released: 2026-07-17
+authors:
+  - name: "Four-View Multi-Agent Framework Contributors"
+license: MIT

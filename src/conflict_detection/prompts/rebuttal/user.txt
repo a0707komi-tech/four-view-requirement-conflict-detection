@@ -1,0 +1,17 @@
+Requirement A: {r1_text}
+
+Requirement B: {r2_text}
+
+Original analysis: {original_output}
+Challenge: {challenge}
+
+Return valid JSON with:
+{
+  "response": "direct answer",
+  "verdict_revised": true or false,
+  "revised_verdict": "compatible | incompatible | uncertain",
+  "revised_confidence": 0.0,
+  "unresolved_issues": []
+}
+
+Return ONLY valid JSON, nothing else.

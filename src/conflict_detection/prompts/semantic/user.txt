@@ -1,0 +1,17 @@
+Analyze whether the following requirement pair can coexist in the same system.
+
+Requirement A: {r1_text}
+
+Requirement B: {r2_text}
+
+Output your analysis as JSON with these fields:
+{
+  "verdict": "compatible | incompatible | uncertain",
+  "confidence": 0.0 to 1.0,
+  "pairwise_conflict_grounded": true or false,
+  "reasoning": "Brief semantic reasoning chain",
+  "key_evidence": ["exact quote from A", "exact quote from B"],
+  "assumptions": ["explicit assumptions only"]
+}
+
+Return ONLY valid JSON, nothing else.

@@ -1,0 +1,25 @@
+Infer the goals behind this requirement pair and analyze their compatibility:
+
+Requirement A: {{requirement_a}}
+
+Requirement B: {{requirement_b}}
+
+Before deciding:
+- Identify the goal each requirement appears to serve.
+- Separate ordinary goal tension from real goal interference, inconsistency, or non-coexistence.
+- Keep the default meaning of explicit key terms unless the pair itself supports another reading.
+- If the pair mainly reflects constraint-versus-flexibility, safety-versus-usability, or performance-versus-coverage differences, do not label it `incompatible` unless the text shows that both goals cannot be pursued together.
+- If the pair mainly reflects a textual interference or inconsistency over the same target, do not downgrade that conflict merely because the high-level goals sound aligned.
+- If the goals could coexist by sequencing, scoping, or prioritizing them, rely on that only when the pair text gives a real basis for it.
+
+Output your analysis as JSON with these fields:
+{
+  "verdict": "compatible | incompatible | uncertain",
+  "confidence": 0.0 to 1.0,
+  "pairwise_conflict_grounded": true or false,
+  "reasoning": "A concise goal-level judgment about whether the requirements pursue compatible aims. Keep this under 120 words.",
+  "key_evidence": ["short quote or phrase from the requirements", "optional second short quote"],
+  "assumptions": ["only assumptions strictly necessary for the verdict"]
+}
+
+Return ONLY valid JSON, nothing else.

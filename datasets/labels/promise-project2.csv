@@ -1,0 +1,12 @@
+R1,R2,Requirement1_text,Requirement2_text,class
+42,54,The system shall prevent any appointments made less than 24 hours.,The system shall stop sending notifcations for appointments made less than 24 hours,Forbid-stop
+43,55,The system shall not accept property posting without images.,MLS property posts without images shall be removed after 30 days.,Forbid-stop
+44,56,The buyer shall be able to view all MLS listings,The buyer agent shall make only MLS listing that match the buyers criteria visible to the buyer.,Input–output
+53,57,The agent shall be able to lookup and update any property listings in the MLS,The administrator shall create an access right for the agent that would allow the agent only view the MLS listings that are in his or her zone,Input–output
+46,58,"The system shall generate all the MLS  numbers based on three criterias date, zone, and zip code.",Relisting a previously sold house can reuse the same MLS number.,output-output
+47,59,The system shall allow a buyer remove MLS listing from his or her listing set.,The buyer has only view right to all MLS listing and cannot modify the listings in his or her set.,Start-forbid
+48,60,Buyer shall be able to generate a Comparative Market Analysis (CMA) report based on property criteria,Only realators shall have access to CMA analysis and report generation,Start-forbid
+49,61,The system shall update all MLS listing properties once a day.,The system shall update all MLS listing properties at midnight each Saturday.,TwoFrequencies
+50,62,The system shall retrieve new raw data for  Comparative Market Analysis (CMA) everytime a new house is sold in a given area,The system shall retrieve the raw data for Comparative Market Analysis (CMA) once a week.,TwoFrequencies
+51,63,Only the seller agent shall be able to marked an under contract MLS listing as sold.,The system automatically change the status of under contract listing as sold once the case is closed.,output-output
+52,64,The agent shally be able to add new clients to the systems using their client ID,The agent shally not be able to add new clients to the systems using their client ID,Negation

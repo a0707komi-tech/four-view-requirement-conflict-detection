@@ -1,0 +1,23 @@
+Requirement A: {r1_text}
+
+Requirement B: {r2_text}
+
+Semantic: {semantic_output}
+Logic: {logic_output}
+Feasibility: {feasibility_output}
+Goal: {goal_output}
+
+Target agent: {target_agent}
+Challenge: {challenge}
+Rebuttal: {rebuttal}
+
+Return valid JSON with:
+{
+  "verdict": "compatible | incompatible | uncertain",
+  "confidence": 0.0 to 1.0,
+  "reasoning": "brief final reasoning",
+  "needs_human_review": false,
+  "uncertainty_source": "none"
+}
+
+Return ONLY valid JSON, nothing else.

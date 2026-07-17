@@ -1,0 +1,16 @@
+Global conflict definition:
+- A pair counts as `incompatible` when, during specification, the two requirements stand in a text-grounded conflict relationship of interference, inconsistency, or impossible joint satisfaction.
+- First check whether the pair is textually anchored to the same target, capability, state, information item, constraint dimension, or operating condition.
+- Then judge the three conflict relations in this order: interference, inconsistency, impossible joint satisfaction.
+- `interference` means one requirement would obstruct, constrain, weaken, or undermine the other's satisfaction over the same anchored target, condition, or operational context.
+- `inconsistency` means the pair gives mismatched, conflicting, or non-coherent prescriptions about the same anchored target, even if the conflict appears as divergent bounds, states, labels, modality, or requirement content rather than a direct impossibility proof.
+- `impossible joint satisfaction` means no single implementation or specification can fully satisfy both requirements at once.
+- `compatible` means no text-grounded interference, inconsistency, or impossible joint satisfaction is established.
+- `uncertain` means the pair cannot yet be resolved from the text alone because a decisive assumption, missing overlap fact, or unresolved ambiguity still blocks the conflict check.
+
+Shared guardrails:
+- Preserve the ordinary meaning of explicit terms. Do not silently rewrite bounds, negations, comparisons, or modal words.
+- Do not stop at naming one local collision window. Explain whether that window establishes a text-grounded interference or inconsistency between the two requirements. If it does, it can support `incompatible`.
+- Do not treat a speculative component split, time split, scope split, or external subsystem assumption as sufficient for `compatible`.
+- If your conclusion depends on an assumption beyond the pair text, record it in `assumptions` and lower confidence. Prefer `uncertain` only when that assumption is decisive to whether a conflict relation exists.
+- Do not use one requirement's abnormal wording, likely defect, or awkward phrasing by itself as evidence of pair conflict.

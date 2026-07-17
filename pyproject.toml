@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "four-view-requirement-conflict-detection"
+version = "1.0.0"
+description = "A four-view multi-agent framework for requirement conflict detection."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "openai>=1.30.0",
+  "python-dotenv>=1.0.1",
+  "sentence-transformers>=2.7.0",
+  "tenacity>=8.2.3"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = [
+  "config",
+  "conflict_detection",
+  "conflict_detection.agents",
+  "conflict_detection.cli",
+  "conflict_detection.io",
+  "conflict_detection.llm",
+  "conflict_detection.orchestration",
+  "conflict_detection.preprocessing",
+  "conflict_detection.prompts",
+  "conflict_detection.runtime",
+  "conflict_detection.runtime.artifacts",
+  "conflict_detection.runtime.batch",
+  "conflict_detection.runtime.executors",
+  "conflict_detection.runtime.state"
+]
+
+[tool.setuptools.package-dir]
+config = "config"
+conflict_detection = "src/conflict_detection"
+"conflict_detection.agents" = "src/conflict_detection/agents"
+"conflict_detection.cli" = "src/conflict_detection/cli"
+"conflict_detection.io" = "src/conflict_detection/io"
+"conflict_detection.llm" = "src/conflict_detection/llm"
+"conflict_detection.orchestration" = "src/conflict_detection/orchestration"
+"conflict_detection.preprocessing" = "src/conflict_detection/preprocessing"
+"conflict_detection.prompts" = "src/conflict_detection/prompts"
+"conflict_detection.runtime" = "src/conflict_detection/runtime"
+"conflict_detection.runtime.artifacts" = "src/conflict_detection/runtime/artifacts"
+"conflict_detection.runtime.batch" = "src/conflict_detection/runtime/batch"
+"conflict_detection.runtime.executors" = "src/conflict_detection/runtime/executors"
+"conflict_detection.runtime.state" = "src/conflict_detection/runtime/state"
+
+[tool.setuptools.package-data]
+config = ["run_profiles/*.json"]
+conflict_detection = ["prompts/**/*.txt", "prompts/**/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]

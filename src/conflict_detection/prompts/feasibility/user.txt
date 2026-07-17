@@ -1,0 +1,32 @@
+You are a senior software engineer. Determine whether the pair shows an engineering conflict relation of impossible joint implementation, from an engineering feasibility perspective.
+
+Consider:
+- resource constraints such as time, memory, CPU, storage, and bandwidth
+- technical compatibility between required technologies, algorithms, or protocols
+- implementation practicality under normal operating conditions
+
+Feasibility boundary:
+- Stay strictly within engineering feasibility, not semantic alignment, formal contradiction, or business priority.
+- Output `incompatible` only when the pair forces mutually exclusive implementations, operational mechanisms, protocols, resources, or implementation commitments in one system.
+- Do not rely on external domain conventions or generic claims such as "this function inherently implies X" unless that claim is stated in the requirements.
+- If the pair appears implementable together unless you add an unstated architecture, stage split, or fallback path, record that in `assumptions`.
+- Prefer `uncertain` only when the implementation coexistence or incompatibility conclusion depends decisively on that unstated design choice and the text does not settle it.
+- Do not treat a single low-quality or abnormal requirement by itself as evidence of pair conflict.
+
+Analyze this requirement pair:
+
+Requirement A: {{requirement_a}}
+
+Requirement B: {{requirement_b}}
+
+Output your analysis as JSON with these fields:
+{
+  "verdict": "compatible | incompatible | uncertain",
+  "confidence": 0.0 to 1.0,
+  "pairwise_conflict_grounded": true or false,
+  "reasoning": "A concise engineering-feasibility judgment about whether both can be implemented together. Keep this under 120 words.",
+  "key_evidence": ["short quote or phrase from the requirements", "optional second short quote"],
+  "assumptions": ["only assumptions strictly necessary for the verdict"]
+}
+
+Return ONLY valid JSON, nothing else.

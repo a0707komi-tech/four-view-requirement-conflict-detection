@@ -1,0 +1,35 @@
+{
+  "name": "default",
+  "phase1_prompt_root": "src/conflict_detection/prompts",
+  "debate_prompt_root": "src/conflict_detection/prompts",
+  "scheduler": {
+    "global_max_workers": 6,
+    "per_agent_max_workers": {
+      "semantic": 2,
+      "logic": 2,
+      "feasibility": 2,
+      "goal": 2,
+      "da": 1,
+      "rebuttal": 1,
+      "arbiter": 1
+    },
+    "max_attempts": {
+      "semantic": 2,
+      "logic": 2,
+      "feasibility": 2,
+      "goal": 2,
+      "da": 2,
+      "rebuttal": 2,
+      "arbiter": 2
+    }
+  },
+  "role_execution": {
+    "semantic": { "mode": "sync", "provider": "deepseek", "batch_max_items": 1 },
+    "logic": { "mode": "sync", "provider": "deepseek", "batch_max_items": 1 },
+    "feasibility": { "mode": "batch", "provider": "kimi", "batch_max_items": 512 },
+    "goal": { "mode": "batch", "provider": "qwen", "batch_max_items": 512 },
+    "da": { "mode": "sync", "provider": "deepseek", "batch_max_items": 1 },
+    "rebuttal": { "mode": "sync", "provider": "dynamic_target_role", "batch_max_items": 1 },
+    "arbiter": { "mode": "sync", "provider": "openai_compatible", "batch_max_items": 1 }
+  }
+}

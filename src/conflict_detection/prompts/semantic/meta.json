@@ -1,0 +1,13 @@
+{
+  "role_name": "semantic",
+  "supports_system_role": true,
+  "temperature_policy": { "mode": "fixed", "value": 0.0 },
+  "max_tokens_policy": { "mode": "minimum", "value": 1024 },
+  "paper_patterns": [
+    "persona",
+    "structured_output",
+    "evidence_grounding",
+    "concise_reasoning",
+    "explicit_assumptions"
+  ]
+}

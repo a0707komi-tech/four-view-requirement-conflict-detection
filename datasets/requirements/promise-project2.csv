@@ -1,0 +1,65 @@
+ID,Requirement
+1,The look and feel of the system shall conform to the user interface standards of the smart device.
+2,The user interface shall have standard menus  buttons for navigation
+3,The system shall have a professional appearance
+4,The product shall have a consistent color scheme and fonts.
+5,The system shall be used by realtors with no training.
+6,The system shall be intuitive and self explanatory.
+7,The product shall be easy for a realtor to learn.
+8,The product shall use symbols and words that are naturally understandable by the realtor community.
+9,The product shall produce search results in an acceptable time
+10,The search results shall be returned no later 30      seconds  after the user has entered the search criteria
+11,The product shall generate a CMA report in an acceptable time.
+12,The CMA report shall be returned no later 60 seconds after the user has entered the CMA report criteria.
+13,The product shall synchronize contacts and appointments in an acceptable time.
+14,The product shall synchronize with the office system every hour.
+15,The product shall be available for use 24 hours per day  365 days  per year
+16,Out of 1000 accesses to the system  the system is available 999 times.
+17,The product shall operate in offline mode whenever internet connection is unavailable.
+18,The product shall allow the user to view previously downloaded search results  CMA reports  and appointments.
+19,The product shall retain user preferences in the event of a failure.
+20,100% of saved user preferences shall be restored when system comes back online.
+21,The product shall be able to support multiple remote users
+22,The product shall be able support 1000 simultaneous users.
+23,The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.
+24,The product shall be installed by an untrained realtor   without recourse to separately-printed instructions.
+25,90% of untrained realtors shall be able to install the product on their device without printed instructions
+26,Only registered realtors shall be able to access the system.
+27,Every user of the system shall be authenticated and authorized.
+28,The product shall prevent its data from incorrect data being introduced.
+29,The system shall allow a real estate agent to query MLS information
+30,The user shall be able to get driving directions to a selected property
+31,The user shall be able to download appointments and contact information for clients
+32,The system shall display clear property images in the search results
+33,The system shall update or create new property listings in the MLS
+34,Realtor shall be able to generate a CMA report based on property criteria
+35,The system shall be able to call the seller or buyer to schedule an appointment
+36,The realtor shall be notified of new client appointments after automatic synchronization with office system
+37,The realtor shall be able to retrieve a map showing property locations for a specified area
+38,The system shall notify the realtor when a seller or buyer responds to an appointment request
+39,The product shall allow the user to save the property search results.
+40,The system shall save all posted properties in MLS listing in the local database
+41,"Once a property is posted on MLS listing, it must be saved in the global database."
+42,The system shall prevent any appointments made less than 24 hours.
+43,The system shall not accept property posting without images.
+44,The buyer shall be able to view all MLS listings
+45,The agent shall be able to lookup and update property listings in the MLS
+46,"The system shall generate all the MLS  numbers based on three criterias date, zone, and zip code."
+47,The system shall allow a buyer remove MLS listing from his or her listing set.
+48,Buyer shall be able to generate a Comparative Market Analysis (CMA) report based on property criteria
+49,The system shall update all MLS listing properties once a day. 
+50,The system shall retrieve new raw data for  Comparative Market Analysis (CMA) everytime a new house is sold in a given area
+51,Only the seller agent shall be able to marked an under contract MLS listing as sold.
+52,The agent shally be able to add new clients to the systems using their client ID
+53,The agent shall be able to lookup and update any property listings in the MLS
+54,The system shall stop sending notifcations for appointments made less than 24 hours
+55,MLS property posts without images shall be removed after 30 days.
+56,The buyer agent shall make only MLS listing that match the buyers criteria visible to the buyer.
+57,The administrator shall create an access right for the agent that would allow the agent only view the MLS listings that are in his or her zone
+58,Relisting a previously sold house can reuse the same MLS number.
+59,The buyer has only view right to all MLS listing and cannot modify the listings in his or her set.
+60,Only realators shall have access to CMA analysis and report generation
+61,The system shall update all MLS listing properties at midnight each Saturday.
+62,The system shall retrieve the raw data for Comparative Market Analysis (CMA) once a week.
+63,The system automatically change the status of under contract listing as sold once the case is closed.
+64,The agent shally not be able to add new clients to the systems using their client ID

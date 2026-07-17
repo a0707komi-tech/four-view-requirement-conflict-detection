@@ -1,0 +1,18 @@
+Requirement A: {r1_text}
+
+Requirement B: {r2_text}
+
+Semantic ({semantic_model}): {semantic_output}
+Logic ({logic_model}): {logic_output}
+Feasibility ({feasibility_model}): {feasibility_output}
+Goal ({goal_model}): {goal_output}
+
+Return valid JSON with:
+{
+  "target_agent": "semantic | logic | feasibility | goal",
+  "challenge": "specific challenge",
+  "challenge_type": "weak_assumption | unsupported_inference | missing_overlap | vote_conflict",
+  "reason": "why this matters"
+}
+
+Return ONLY valid JSON, nothing else.

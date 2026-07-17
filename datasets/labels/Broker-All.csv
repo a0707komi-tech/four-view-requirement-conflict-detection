@@ -1,0 +1,14 @@
+R1,R2,Requirement1_text,Requirement2_text,class
+2,4,"Once the account is locked, the system sends an account lock notification email to the account’s owner.","If a user has already received a notification via email, he will not receive the same notification via SMS.",conflict
+3,4,"Once an account is locked, the system would also send a SMS message to the account’s owner to notify him about the situation owner","If a user has already received a notification via email, he will not receive the same notification via SMS.",conflict
+10,11,It shall be forbidden for PBX accounts to have virtual circuits.,The system shall deactivate virtual circuits for PBX accounts that do not pay for the service.,conflict
+35,36,The system shall prevent creation of accounts from foreign countries.,The system shall stop foreign accounts that have been inactive for more than three months,conflict
+12,13,The broker shall be able to access the rate table,"Only the administrator shall have access to the rate table, and he/she shall create an access list for brokers based on the rate table.",conflict
+37,13,The broker shall be able to print the entire rate table from within the system,"Only the administrator shall have access to the rate table, and he/she shall create an access list for brokers based on the rate table.",conflict
+14,15,The system shall automatically assign unique identification numbers to all registered users.,Users shall have the option to customize the prefix of their own identification numbers and choose a user defined prefix.,conflict
+40,42,It shall be forbidden to delete invoices.,A broker should be able to delete his own subscribers�?accounts and associated invoices,conflict
+32,45,The brokers shall not modify data in closed accounts,A broker should be able to revise data in all of previously closed accounts.,conflict
+5,6,The system shall invoice broker accounts once per year using CDR.,The system shall invoice broker accounts once per month using CDR.,conflict
+33,34,The system shall run an audit of all accounts once per month,Audit of all accounts shall be performed once every week.,conflict
+39,44,The broker shall be able to assign a user specified number for a new subscription account,The system automatically create unique number for subscription acount at the time of enrolment.,conflict
+41,43,The system shall highlight overdue invoices in the dashboard,The system shall not highlight overdue invoices in the dashboard,conflict

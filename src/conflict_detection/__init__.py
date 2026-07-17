@@ -1,0 +1,1 @@
+"""Layered conflict detection package."""

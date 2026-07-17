@@ -1,0 +1,13 @@
+{
+  "role_name": "logic",
+  "supports_system_role": true,
+  "temperature_policy": { "mode": "fixed", "value": 0.0 },
+  "max_tokens_policy": { "mode": "minimum", "value": 1536 },
+  "paper_patterns": [
+    "persona",
+    "structured_output",
+    "evidence_grounding",
+    "coexistence_check",
+    "explicit_assumptions"
+  ]
+}
