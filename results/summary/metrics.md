@@ -11,3 +11,5 @@ Conflict detection metrics use `incompatible` as the positive prediction. Duplic
 | Library-Gold | 17 | 0 | 3 | 5866 | 1.00 | 0.85 | 0.92 | 1.00 |
 
 Mean F1 across datasets: **0.80**
+
+Uncertainty and abstention analysis: [uncertainty_summary.md](uncertainty_summary.md)

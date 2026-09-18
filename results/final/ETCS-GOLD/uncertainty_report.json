@@ -1,0 +1,580 @@
+{
+  "dataset": "ETCS-GOLD",
+  "slug": "ETCS-GOLD",
+  "scope": {
+    "final_pairs": 1599,
+    "canonical_candidate_pairs": 778,
+    "duplicate_route_pairs": 20,
+    "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+    "final_uncertainty_denominator": "all final verdict rows"
+  },
+  "final_outcomes": {
+    "compatible": 1420,
+    "incompatible": 82,
+    "uncertain": 97
+  },
+  "route_counts": {
+    "canonical_candidate": 778,
+    "canonical_alias": 801,
+    "duplicate_group_rule": 20
+  },
+  "uncertainty": {
+    "count": 97,
+    "rate": 0.0607,
+    "by_route": {
+      "canonical_candidate": 50,
+      "canonical_alias": 47
+    },
+    "by_resolution_stage": {
+      "canonical_candidate": 50,
+      "canonical_alias": 47
+    },
+    "raw_sources": {
+      "unverifiable_assumption": 55,
+      "missing_domain_knowledge": 22,
+      "ambiguous_requirement": 18,
+      "verifiable_assumption": 2
+    },
+    "explicit_human_review_count": 95,
+    "explicit_human_review_rate_among_uncertain": 0.9794,
+    "uncertain_without_review_flag": 2
+  },
+  "phase1_view_abstention": {
+    "semantic": {
+      "evaluated_pairs": 778,
+      "compatible": 673,
+      "incompatible": 46,
+      "uncertain": 59,
+      "missing": 0,
+      "abstention_rate": 0.0758
+    },
+    "logic": {
+      "evaluated_pairs": 778,
+      "compatible": 637,
+      "incompatible": 47,
+      "uncertain": 94,
+      "missing": 0,
+      "abstention_rate": 0.1208
+    },
+    "feasibility": {
+      "evaluated_pairs": 778,
+      "compatible": 691,
+      "incompatible": 75,
+      "uncertain": 12,
+      "missing": 0,
+      "abstention_rate": 0.0154
+    },
+    "goal": {
+      "evaluated_pairs": 778,
+      "compatible": 673,
+      "incompatible": 103,
+      "uncertain": 2,
+      "missing": 0,
+      "abstention_rate": 0.0026
+    }
+  },
+  "phase1_pairs_with_any_abstention": 139,
+  "phase1_any_abstention_rate": 0.1787,
+  "phase1_vote_patterns": [
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 572
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 47
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 20
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 15
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 10
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 8
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+      "count": 8
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 8
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=incompatible",
+      "count": 7
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 7
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=compatible",
+      "count": 6
+    },
+    {
+      "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+      "count": 6
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+      "count": 6
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+      "count": 5
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 5
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=compatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=incompatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=incompatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=compatible; logic=incompatible; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=compatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=compatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=uncertain; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=uncertain",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=uncertain; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=uncertain; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=uncertain; goal=uncertain",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=uncertain; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=uncertain; goal=incompatible",
+      "count": 1
+    }
+  ],
+  "representative_uncertain_cases": [
+    {
+      "pair_id": "1_61",
+      "route_type": "canonical_candidate",
+      "confidence": 0.78,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "You assume operational status is 'information to allow him to drive the train safely.' What in the requirement text grounds that equivalence, and how do you rule out non-safety-related status displays?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair is textually anchored to driver-facing information, but no conflict is established from the text alone. A requires the current operational status to be shown on the DMI. B restricts ETCS from providing information that allows safe driving unless speed is below 400 km/h. The decisive missing premise is whether A’s “current operational status” is, in this pair, ETCS-provided safe-driving information covered by B. The strongest incompatibility arguments depended on that assumption and were later withdrawn. The strongest compatibility story also depends on assuming operational status is outside B’s restricted class. Because that classification is unresolved by the pair text, interference/inconsistency is not proven."
+    },
+    {
+      "pair_id": "3_10",
+      "route_type": "canonical_candidate",
+      "confidence": 0.86,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 1.0,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "You assume Requirement A mandates ETCS to use radio, but the text only says 'Basic track to train... via radio' without specifying ETCS as the provider. What text grounds your assumption that both requirements target the same system?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair is textually anchored to the same capability: track-to-train and train-to-track information via continuous radio. If both applied to ETCS, they would be inconsistent, because A affirms that radio-based exchange is a basic function while B says ETCS shall not be required to provide that function. But the decisive scope premise is missing: A never names ETCS, while B does. A may describe a broader or different system, so the conflict cannot be conclusively grounded from the pair text alone."
+    },
+    {
+      "pair_id": "4_61",
+      "route_type": "canonical_candidate",
+      "confidence": 0.83,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "You assume an acknowledgment request is 'information to allow him to drive the train safely.' Where in the text is that equivalence grounded, and why isn't it equally plausible that the request is a procedural command outside that safety-information scope?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair is only weakly anchored through possible driver-facing information. Requirement A governs acknowledgement/brake behavior for level transitions requested from trackside; Requirement B limits what ETCS may provide to the driver above 400 km/h. A conflict is not textually established because A never says ETCS provides the acknowledgement request, nor that the request is the kind of 'information to allow him to drive the train safely' covered by B. But compatibility is also not decisively grounded, because that same linkage is plausible. Since whether interference exists depends on those unresolved assumptions, the strongest surviving synthesis is uncertain."
+    },
+    {
+      "pair_id": "5_7",
+      "route_type": "canonical_candidate",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "You treat 'in principle' as a general exception mechanism, but what text in Requirement B explicitly permits an exception for STM transitions that require driver acknowledgement?",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair is anchored to the same subject—transition behavior—but only overlaps if transitions to/from STM can occur while the train is moving. Requirement A requires driver acknowledgement for STM transitions; Requirement B says moving transitions shall in principle occur automatically. That suggests potential interference on the same mechanism, but the conflict is not fully established from the text alone because A does not say those STM transitions happen while moving, and B applies only in that operating condition. Also, B’s qualifier “in principle” weakens an absolute inconsistency claim. So a conflict is plausible, but a decisive text-grounded overlap premise is missing."
+    },
+    {
+      "pair_id": "5_8",
+      "route_type": "canonical_candidate",
+      "confidence": 0.84,
+      "needs_human_review": true,
+      "uncertainty_source": "missing_domain_knowledge",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "goal",
+        "challenge": "You assume STM transitions are a subset of level transitions. Where in the requirement pair text is that subset relation explicitly stated or necessarily implied?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The apparent clash is strong only if transitions to/from national Operation (STM) are also “level transitions.” If they are, A requires driver acknowledgement while B forbids any driver input, creating a direct inconsistency over the same transition event. But that overlap is not established by the pair text itself. A is anchored to STM transitions; B is anchored to level transitions. Since the decisive premise that these are the same operational class is missing, neither incompatibility nor compatibility is fully grounded from the text alone."
+    },
+    {
+      "pair_id": "5_13",
+      "route_type": "canonical_candidate",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "You equate 'transitions to and from national Operation (STM)' with 'compatibility with national systems.' What text in Requirement A proves the ETCS must be compatible with, rather than merely interface during a transition from, those national systems?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair overlaps on ETCS and a national-operation context, but no conflict is textually established. A requires a driver acknowledgement request during transitions to and from national Operation (STM). B forbids ETCS compatibility with national systems listed in the CCS TSI. The strongest incompatibility claim depends on an unstated premise that handling STM transitions necessarily requires compatibility with those listed national systems. The surviving compatible reading is also not fully decisive because the text does not clarify whether STM in A is one of the national systems covered by B. Without that missing premise, interference, inconsistency, or impossible joint satisfaction is not proven from the pair alone."
+    },
+    {
+      "pair_id": "5_14",
+      "route_type": "canonical_alias",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "You treat 'in principle' as a general exception mechanism, but what text in Requirement B explicitly permits an exception for STM transitions that require driver acknowledgement?",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair is anchored to the same subject—transition behavior—but only overlaps if transitions to/from STM can occur while the train is moving. Requirement A requires driver acknowledgement for STM transitions; Requirement B says moving transitions shall in principle occur automatically. That suggests potential interference on the same mechanism, but the conflict is not fully established from the text alone because A does not say those STM transitions happen while moving, and B applies only in that operating condition. Also, B’s qualifier “in principle” weakens an absolute inconsistency claim. So a conflict is plausible, but a decisive text-grounded overlap premise is missing."
+    },
+    {
+      "pair_id": "5_34",
+      "route_type": "canonical_candidate",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "ambiguous_requirement",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "goal",
+        "challenge": "You assume acknowledgement is a post-initiation action that does not preclude automatic initiation. Where in the requirement texts is this temporal separation grounded, and how do you rule out that acknowledgement is part of the initiation itself?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair is textually anchored to an overlapping case: STM transitions that occur while the train is stationary. A requires ETCS to request driver acknowledgement for STM transitions; B requires stationary transitions to be initiated automatically or manually as appropriate. No direct conflict is stated unless 'driver acknowledgement' is treated as part of initiation or 'automatic initiation' is read to exclude any required driver action. The text itself does not define that relationship. The compatible reading relies on a stage split (automatic initiation, later acknowledgement), but that split is not clearly grounded in the pair. Because the conflict turns on an unresolved assumption about initiation versus acknowledgement, the safest judgment is uncertain."
+    },
+    {
+      "pair_id": "5_37",
+      "route_type": "canonical_candidate",
+      "confidence": 0.73,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 1.0,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "You assume transitions may occur above 100 km/h, but the text does not state that. Why is this unsupported assumption decisive for 'uncertain' rather than concluding no conflict is grounded?",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair is anchored to the same system (ETCS), but not to a clearly shared operating condition. A appears to require ETCS to request driver acknowledgement for STM transitions in general, while B limits ETCS functionality to speeds at or below 100 km/h. A text-grounded conflict would arise only if STM transitions must or may occur above 100 km/h, because ETCS then could not perform A. The pair itself does not state transition speeds or whether A is implicitly limited to ETCS’s functional envelope. Since both compatibility and incompatibility hinge on that unresolved premise, no conflict relation is decisively grounded from the pair alone."
+    },
+    {
+      "pair_id": "5_48",
+      "route_type": "canonical_alias",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "ambiguous_requirement",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "goal",
+        "challenge": "You assume acknowledgement is a post-initiation action that does not preclude automatic initiation. Where in the requirement texts is this temporal separation grounded, and how do you rule out that acknowledgement is part of the initiation itself?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair is textually anchored to an overlapping case: STM transitions that occur while the train is stationary. A requires ETCS to request driver acknowledgement for STM transitions; B requires stationary transitions to be initiated automatically or manually as appropriate. No direct conflict is stated unless 'driver acknowledgement' is treated as part of initiation or 'automatic initiation' is read to exclude any required driver action. The text itself does not define that relationship. The compatible reading relies on a stage split (automatic initiation, later acknowledgement), but that split is not clearly grounded in the pair. Because the conflict turns on an unresolved assumption about initiation versus acknowledgement, the safest judgment is uncertain."
+    }
+  ]
+}

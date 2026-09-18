@@ -1,0 +1,287 @@
+{
+  "dataset": "OpenAPI Specification 3.0",
+  "slug": "OpenAPI-Specification-3.0",
+  "scope": {
+    "final_pairs": 870,
+    "canonical_candidate_pairs": 594,
+    "duplicate_route_pairs": 10,
+    "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+    "final_uncertainty_denominator": "all final verdict rows"
+  },
+  "final_outcomes": {
+    "compatible": 834,
+    "incompatible": 32,
+    "uncertain": 4
+  },
+  "route_counts": {
+    "canonical_candidate": 594,
+    "canonical_alias": 266,
+    "duplicate_group_rule": 10
+  },
+  "uncertainty": {
+    "count": 4,
+    "rate": 0.0046,
+    "by_route": {
+      "canonical_candidate": 3,
+      "canonical_alias": 1
+    },
+    "by_resolution_stage": {
+      "canonical_candidate": 3,
+      "canonical_alias": 1
+    },
+    "raw_sources": {
+      "unverifiable_assumption": 4
+    },
+    "explicit_human_review_count": 4,
+    "explicit_human_review_rate_among_uncertain": 1.0,
+    "uncertain_without_review_flag": 0
+  },
+  "phase1_view_abstention": {
+    "semantic": {
+      "evaluated_pairs": 594,
+      "compatible": 569,
+      "incompatible": 14,
+      "uncertain": 11,
+      "missing": 0,
+      "abstention_rate": 0.0185
+    },
+    "logic": {
+      "evaluated_pairs": 594,
+      "compatible": 553,
+      "incompatible": 15,
+      "uncertain": 26,
+      "missing": 0,
+      "abstention_rate": 0.0438
+    },
+    "feasibility": {
+      "evaluated_pairs": 594,
+      "compatible": 542,
+      "incompatible": 52,
+      "uncertain": 0,
+      "missing": 0,
+      "abstention_rate": 0.0
+    },
+    "goal": {
+      "evaluated_pairs": 594,
+      "compatible": 555,
+      "incompatible": 39,
+      "uncertain": 0,
+      "missing": 0,
+      "abstention_rate": 0.0
+    }
+  },
+  "phase1_pairs_with_any_abstention": 34,
+  "phase1_any_abstention_rate": 0.0572,
+  "phase1_vote_patterns": [
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 515
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=compatible",
+      "count": 19
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 14
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 13
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 7
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=compatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=incompatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+      "count": 1
+    }
+  ],
+  "representative_uncertain_cases": [
+    {
+      "pair_id": "5_20",
+      "route_type": "canonical_candidate",
+      "confidence": 0.76,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "semantic",
+        "challenge": "You assume the version field in Requirement B contains a semantic version number whose major.minor is the same as in Requirement A. Where in the text is that identity established?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair does not textually establish that Requirement B’s `version` field is the same semantic version number referenced in Requirement A. A speaks about the major.minor portion of a semantic version number and assigns it the meaning of the OAS feature set. B speaks about the Info Object’s version field reflecting the deployed API implementation version and being updated on production release. If these are the same version identifier, there may be inconsistency; but that identity is a decisive unstated premise. Without it, no text-grounded interference, inconsistency, or impossible joint satisfaction is established from the pair alone."
+    },
+    {
+      "pair_id": "5_21",
+      "route_type": "canonical_candidate",
+      "confidence": 0.84,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.4,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "goal",
+        "challenge": "What text in the pair establishes that 'the semantic version number' in Requirement A and 'the Info Object version field' in Requirement B refer to the same field, rather than to distinct version fields in the specification?",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "The pair does not textually establish a shared target strongly enough to ground conflict. Requirement A speaks of \"the semantic version number\" whose major.minor designates the OAS feature set, while Requirement B specifically constrains the \"Info Object version field\" to represent the OpenAPI document version, not the specification version. A conflict exists only if A’s semantic version number is the same field as B’s Info Object version field, but that identity is not stated in the pair. Without that decisive overlap premise, interference, inconsistency, and impossible joint satisfaction are not established from the text alone."
+    },
+    {
+      "pair_id": "13_27",
+      "route_type": "canonical_candidate",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "You claim incompatibility because two parameters cannot share the same name and location, but Requirement B explicitly says both declarations MUST use the same name. How does that create a conflict rather than a single, shared placeholder?",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair is only weakly anchored to the same target. A constrains the syntax of OpenAPI path templates; B constrains how renamed parameters are declared during a transition, but does not clearly say the parameter is a path parameter or that two distinct placeholder names must coexist in one template. The incompatibility arguments rely on extra OpenAPI assumptions: that B applies to path parameters here, that template placeholder names must match declaration names, and that the two declarations correspond to different names despite B also saying they must use the same name at the same location. Without those decisive assumptions, no text-grounded interference, inconsistency, or impossible joint satisfaction between A and B is established from the pair alone."
+    },
+    {
+      "pair_id": "24_27",
+      "route_type": "canonical_alias",
+      "confidence": 0.77,
+      "needs_human_review": true,
+      "uncertainty_source": "unverifiable_assumption",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "You claim incompatibility because two parameters cannot share the same name and location, but Requirement B explicitly says both declarations MUST use the same name. How does that create a conflict rather than a single, shared placeholder?",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair is only weakly anchored to the same target. A constrains the syntax of OpenAPI path templates; B constrains how renamed parameters are declared during a transition, but does not clearly say the parameter is a path parameter or that two distinct placeholder names must coexist in one template. The incompatibility arguments rely on extra OpenAPI assumptions: that B applies to path parameters here, that template placeholder names must match declaration names, and that the two declarations correspond to different names despite B also saying they must use the same name at the same location. Without those decisive assumptions, no text-grounded interference, inconsistency, or impossible joint satisfaction between A and B is established from the pair alone."
+    }
+  ]
+}

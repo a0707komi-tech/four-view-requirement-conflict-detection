@@ -7,6 +7,11 @@ from itertools import combinations
 from pathlib import Path
 from typing import Any
 
+try:
+    from generate_uncertainty_reports import generate_reports
+except ModuleNotFoundError:  # Supports both direct execution and module execution.
+    from scripts.generate_uncertainty_reports import generate_reports
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -264,7 +269,15 @@ def write_summary_markdown(root: Path, rows: list[tuple[str, ConflictMetrics]]) 
             f"{metrics.precision:.2f} | {metrics.recall:.2f} | {metrics.f1:.2f} | {metrics.accuracy:.2f} |"
         )
     macro_f1 = sum(metrics.f1 for _, metrics in rows) / len(rows)
-    lines.extend(["", f"Mean F1 across datasets: **{macro_f1:.2f}**", ""])
+    lines.extend(
+        [
+            "",
+            f"Mean F1 across datasets: **{macro_f1:.2f}**",
+            "",
+            "Uncertainty and abstention analysis: [uncertainty_summary.md](uncertainty_summary.md)",
+            "",
+        ]
+    )
     (root / "results" / "summary" / "metrics.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -301,6 +314,7 @@ def generate_outputs(root: Path = ROOT) -> dict[str, dict[str, Any]]:
 
 def main() -> int:
     output = generate_outputs()
+    generate_reports()
     print(json.dumps(output, ensure_ascii=False, indent=2))
     return 0
 

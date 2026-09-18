@@ -58,7 +58,7 @@ Dataset schemas, provenance limits, and licensing boundaries are documented in [
 
 Mean F1 across the five datasets is **0.80**.
 
-The repository includes final verdicts, TP/FP/FN reports, and effective intermediate outputs for all seven agents. See [results/README.md](results/README.md).
+The repository includes final verdicts, TP/FP/FN reports, uncertainty and abstention analyses, and effective intermediate outputs for all seven agents. See [results/README.md](results/README.md) and [results/summary/uncertainty_summary.md](results/summary/uncertainty_summary.md).
 
 ## Installation
 

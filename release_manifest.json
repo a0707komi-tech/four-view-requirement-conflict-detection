@@ -1,7 +1,7 @@
 {
   "release": "four-view-requirement-conflict-detection",
-  "version": "1.0.0",
-  "date": "2026-07-17",
+  "version": "1.1.0",
+  "date": "2026-09-18",
   "selection": {
     "datasets": [
       "ETCS-GOLD",
@@ -13,6 +13,7 @@
     "etcs_result": "round4",
     "agent_record_rule": "latest successful record per pair",
     "duplicate_policy": "duplicate is not a conflict-positive class",
+    "uncertainty_reporting": "offline report generated from stored final verdicts and agent records",
     "excluded_experiments": [
       "ablation",
       "baseline",
@@ -56,8 +57,8 @@
       "path": "README.md",
       "category": "project_metadata",
       "source": "generated",
-      "size_bytes": 3867,
-      "sha256": "89e9b18b2d353af349eceb0383e677c96042d14ef8423853a55341f440c31530",
+      "size_bytes": 3989,
+      "sha256": "2f18a9ab83fe94ce03a1d7fd4b6c9b60623013cc9e06710aa3a326b86e53932c",
       "record_count": null
     },
     {
@@ -200,8 +201,8 @@
       "path": "docs/reproduction.md",
       "category": "documentation",
       "source": "generated",
-      "size_bytes": 1365,
-      "sha256": "03df9ddb19bc6af16584e5a1f2bd03ca8a2b861719b3f3e11f461a1918911734",
+      "size_bytes": 1877,
+      "sha256": "5568a8c68a24fbcb7aed378fcf0b86bf2c06a1c97dd4d051daf801a0fec08431",
       "record_count": null
     },
     {
@@ -224,8 +225,8 @@
       "path": "results/README.md",
       "category": "result",
       "source": "generated",
-      "size_bytes": 1193,
-      "sha256": "42381f0db8407fb42d4037bb3b48a3103d7afbe2c85a3c99a75cc05fa17139c2",
+      "size_bytes": 1892,
+      "sha256": "d7046d5c22461ba012d0269f220d49ca8aa90d3f58a8d27062b1daf83b4d32ba",
       "record_count": null
     },
     {
@@ -557,12 +558,44 @@
       "record_count": null
     },
     {
+      "path": "results/final/Broker-All/phase1_abstentions.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 22762,
+      "sha256": "0fe3c44b770cc1c0e58c7792cc0119e11c063f5d90eb87a3aa8f69fd5c4e8a07",
+      "record_count": 23
+    },
+    {
       "path": "results/final/Broker-All/uncertain.jsonl",
       "category": "result",
       "source": "generated",
       "size_bytes": 16699,
       "sha256": "9de3788260e23f05bf790eb1590ff7cc71073b68d910637fe88b3a9d937567e8",
       "record_count": 9
+    },
+    {
+      "path": "results/final/Broker-All/uncertainty_reasons.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 15301,
+      "sha256": "58a85d23f396f6c8adaeb6dba9d14801ee56edfc5cf861fe0590cd1bbf3b5975",
+      "record_count": 9
+    },
+    {
+      "path": "results/final/Broker-All/uncertainty_report.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 22781,
+      "sha256": "6b7f04d6cd2954e10c665a9342de5a9ebdf1f9340f7eeec7e8402e8518d7193f",
+      "record_count": null
+    },
+    {
+      "path": "results/final/Broker-All/uncertainty_report.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 32643,
+      "sha256": "f90803af5a614a8702f14b823df4f4156893b22b0991eb60dfbb87ebe96481f6",
+      "record_count": null
     },
     {
       "path": "results/final/Broker-All/verdicts.jsonl",
@@ -621,12 +654,44 @@
       "record_count": null
     },
     {
+      "path": "results/final/ETCS-GOLD/phase1_abstentions.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 85543,
+      "sha256": "34d7003b19be7b834a300a9c8fc962e8b6c25ae82a07bd5f042c5ac80f61b030",
+      "record_count": 167
+    },
+    {
       "path": "results/final/ETCS-GOLD/uncertain.jsonl",
       "category": "result",
       "source": "generated",
       "size_bytes": 186547,
       "sha256": "d8278c458c1f48d32f3221f1adf4c974bdd8017da52f8ce2d98fbf3888c52cba",
       "record_count": 97
+    },
+    {
+      "path": "results/final/ETCS-GOLD/uncertainty_reasons.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 158243,
+      "sha256": "9c2d2edaae77f03ceb19822698a2f1ef32a4ddf33fa32fc6d9da9736a03bc049",
+      "record_count": 97
+    },
+    {
+      "path": "results/final/ETCS-GOLD/uncertainty_report.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 25503,
+      "sha256": "253016cfe967c1408965c9eb7df62a8507fc500b13e564fdc0b0083381452de5",
+      "record_count": null
+    },
+    {
+      "path": "results/final/ETCS-GOLD/uncertainty_report.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 24520,
+      "sha256": "33a21625190f7ac9c8bd7420a7eb79738ae47dbc5cc7e1994661f945dd98c1ed",
+      "record_count": null
     },
     {
       "path": "results/final/ETCS-GOLD/verdicts.jsonl",
@@ -685,12 +750,44 @@
       "record_count": null
     },
     {
+      "path": "results/final/Library-Gold/phase1_abstentions.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 173199,
+      "sha256": "9487c880dc5c6ea2490855d3d423aefc24f1dab1634ee32a062f86af8336690b",
+      "record_count": 179
+    },
+    {
       "path": "results/final/Library-Gold/uncertain.jsonl",
       "category": "result",
       "source": "generated",
       "size_bytes": 73320,
       "sha256": "e811793bddb658cede5c21151c17d3a9119d7a58b5967d2a9fabdf82c52ddf15",
       "record_count": 41
+    },
+    {
+      "path": "results/final/Library-Gold/uncertainty_reasons.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 65867,
+      "sha256": "198f82dedb41147a81998ea169eaa3a01dbf81f1c0f1dc871d3cd02b23cb172a",
+      "record_count": 41
+    },
+    {
+      "path": "results/final/Library-Gold/uncertainty_report.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 28742,
+      "sha256": "2c5726a3d1469f65b9773e075743ca7acfabf7aed3e60a8bdb1d8e1a68d8a18c",
+      "record_count": null
+    },
+    {
+      "path": "results/final/Library-Gold/uncertainty_report.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 37188,
+      "sha256": "9ad4451bfdd75801f43d2eba2068fb8b559608070d904aa9141482806ebd9cb6",
+      "record_count": null
     },
     {
       "path": "results/final/Library-Gold/verdicts.jsonl",
@@ -749,12 +846,44 @@
       "record_count": null
     },
     {
+      "path": "results/final/OpenAPI-Specification-3.0/phase1_abstentions.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 14320,
+      "sha256": "55816eaef8cd10d36fb060f9465c07eb9344071ab94078786cfed82a5931d76f",
+      "record_count": 37
+    },
+    {
       "path": "results/final/OpenAPI-Specification-3.0/uncertain.jsonl",
       "category": "result",
       "source": "generated",
       "size_bytes": 8179,
       "sha256": "561bdd1df816ff842a6432bed4f14ca4e42efbf3fdca3a242c06dfd0417268b5",
       "record_count": 4
+    },
+    {
+      "path": "results/final/OpenAPI-Specification-3.0/uncertainty_reasons.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 6762,
+      "sha256": "c5e90796dde4c7de95b18e2e2fd0e6bfb030ba509689ab01985bd874eb8baf4c",
+      "record_count": 4
+    },
+    {
+      "path": "results/final/OpenAPI-Specification-3.0/uncertainty_report.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 11802,
+      "sha256": "13a56064925a80bcd05b52b604064d9a3fdf46c4ef9f9d6dc64690db5b767341",
+      "record_count": null
+    },
+    {
+      "path": "results/final/OpenAPI-Specification-3.0/uncertainty_report.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 12061,
+      "sha256": "529de05669bbaef1bd161d652273098ce46d9c44f2dfa6acd0a024b862188726",
+      "record_count": null
     },
     {
       "path": "results/final/OpenAPI-Specification-3.0/verdicts.jsonl",
@@ -813,12 +942,44 @@
       "record_count": null
     },
     {
+      "path": "results/final/promise-project2/phase1_abstentions.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 54072,
+      "sha256": "0753e17d4f55da99c6c9576db6fd1457407a77208860b36be6eb8b12a5ea3f9b",
+      "record_count": 55
+    },
+    {
       "path": "results/final/promise-project2/uncertain.jsonl",
       "category": "result",
       "source": "generated",
       "size_bytes": 33389,
       "sha256": "2dc4a9dac7d2d54c687db1209c66084d1accfbd27ee669890e71d764cb90663b",
       "record_count": 18
+    },
+    {
+      "path": "results/final/promise-project2/uncertainty_reasons.jsonl",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 30472,
+      "sha256": "d9755478c4272980ee4ecb62c88203a052c167c4bf8263b4facce3c1fd6937d8",
+      "record_count": 18
+    },
+    {
+      "path": "results/final/promise-project2/uncertainty_report.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 25350,
+      "sha256": "d354bd84ec5a61307518a304bab0e54d96a89f4901abf2711287d32fadf8d086",
+      "record_count": null
+    },
+    {
+      "path": "results/final/promise-project2/uncertainty_report.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 34179,
+      "sha256": "b9ce3212e812f3f44efb1caa2c175870f90e45f4d14535c39817f007232e46b7",
+      "record_count": null
     },
     {
       "path": "results/final/promise-project2/verdicts.jsonl",
@@ -848,8 +1009,40 @@
       "path": "results/summary/metrics.md",
       "category": "result",
       "source": "generated",
-      "size_bytes": 695,
-      "sha256": "e00ab982fc2db66e693645460937cfb811843e40e266487be8198f7c444bfb3d",
+      "size_bytes": 784,
+      "sha256": "55567a6121b917b6ff3ca9bcec1b2a69b1ac530fd2e3f6dd31ecccb8d1ece2d2",
+      "record_count": null
+    },
+    {
+      "path": "results/summary/phase1_abstention_summary.csv",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 1026,
+      "sha256": "c9712f994377dfeee4efe98bf5c20e75a264bb0a3575618a6aaf1c66d721cb2d",
+      "record_count": 20
+    },
+    {
+      "path": "results/summary/uncertainty_summary.csv",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 929,
+      "sha256": "d8ecd27ed31715a4b07493e4f695795a62e3241a4b7ddcb4e54b8af2a8179c74",
+      "record_count": 5
+    },
+    {
+      "path": "results/summary/uncertainty_summary.json",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 123966,
+      "sha256": "d746f1b0066728a67aac83f3ff4f763ebce6492f971e70cdcc07a210b3836c2c",
+      "record_count": null
+    },
+    {
+      "path": "results/summary/uncertainty_summary.md",
+      "category": "result",
+      "source": "generated",
+      "size_bytes": 2066,
+      "sha256": "e3a41a2268b12e81fea52c799ca0ebfe7b2fc8179234544d730181111d946ab0",
       "record_count": null
     },
     {
@@ -864,8 +1057,16 @@
       "path": "scripts/evaluate_results.py",
       "category": "tooling",
       "source": "generated",
-      "size_bytes": 11547,
-      "sha256": "24e826edf733d4dd2417fd34391dca4337060d979764c34afa648cf3b725baba",
+      "size_bytes": 11970,
+      "sha256": "a5011687b65960a01ffc327da132906ce13153b68e2f8d2a31df42507ef358c1",
+      "record_count": null
+    },
+    {
+      "path": "scripts/generate_uncertainty_reports.py",
+      "category": "tooling",
+      "source": "generated",
+      "size_bytes": 19751,
+      "sha256": "2c7e65372bc32a514d7fde459927f20d42c01f031aba4618c436e5febfae36ae",
       "record_count": null
     },
     {
@@ -896,8 +1097,8 @@
       "path": "scripts/verify_release.py",
       "category": "tooling",
       "source": "generated",
-      "size_bytes": 9775,
-      "sha256": "b7d449aeb5f25981c260015fe0fbd93854f80d3106b3bb70e10c359073a98ae9",
+      "size_bytes": 9923,
+      "sha256": "0b3d3c9b2eb2c953993c0e5c04771201047d740233d243fa15f48fc78128c1cc",
       "record_count": null
     },
     {

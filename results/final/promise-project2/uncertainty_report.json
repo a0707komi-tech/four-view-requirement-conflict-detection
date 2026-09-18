@@ -1,0 +1,534 @@
+{
+  "dataset": "promise-project2",
+  "slug": "promise-project2",
+  "scope": {
+    "final_pairs": 913,
+    "canonical_candidate_pairs": 913,
+    "duplicate_route_pairs": 0,
+    "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+    "final_uncertainty_denominator": "all final verdict rows"
+  },
+  "final_outcomes": {
+    "compatible": 887,
+    "uncertain": 18,
+    "incompatible": 8
+  },
+  "route_counts": {
+    "canonical_candidate": 913
+  },
+  "uncertainty": {
+    "count": 18,
+    "rate": 0.0197,
+    "by_route": {
+      "canonical_candidate": 18
+    },
+    "by_resolution_stage": {
+      "canonical_candidate": 18
+    },
+    "raw_sources": {
+      "Requirement A lacks a defined response-time threshold, and Requirement B does not specify whether retrieval is synchronous, asynchronous, or resource-isolated.": 1,
+      "Requirement A uses an undefined subjective threshold ('acceptable time'), so it is unclear whether Requirement B's 60-second limit satisfies it.": 1,
+      "Whether CMA report generation requires internet-dependent data/services, especially during offline mode, is unspecified.": 1,
+      "Whether hourly synchronization requires internet access and whether offline mode prohibits or merely defers synchronization is not specified.": 1,
+      "Calling technology and the scope of offline mode are unspecified.": 1,
+      "Role-term ambiguity: the requirements do not define whether 'real estate agent' and 'registered realtor' denote the same allowed user class.": 1,
+      "none": 1,
+      "term ambiguity: 'agent' is not explicitly defined relative to 'registered realtor'": 1,
+      "Whether 'buyer' is necessarily a non-realtor distinct role is not explicitly defined in the requirement text.": 1,
+      "The requirements do not explicitly state that the seller agent is necessarily a registered realtor, nor explicitly tie the 'mark as sold' action to system access.": 1,
+      "The relationship between 'agent' and 'registered realtor' is unspecified in the requirement text.": 1,
+      "Requirement B's temporal condition ('appointments made less than 24 hours') is underspecified, and the requirements do not define whether A applies universally without exceptions.": 1,
+      "Ambiguity in 'appointments made less than 24 hours' and whether B's 'notifications' covers the response-notification event in A.": 1,
+      "Ambiguity in the scope of 'accept' and whether Requirement B refers to posts newly accepted by the same system versus legacy/imported existing MLS posts.": 1,
+      "Ambiguity in whether 'removed' means no longer viewable and whether 'all MLS listings' includes only active listings or also archived/historical ones.": 1,
+      "ambiguity over whether Requirement B's view-only zone access right is exclusive or can coexist with other rights that satisfy Requirement A": 1,
+      "Whether 'update all MLS listing properties' includes changing listing status to 'sold' in a way that would bypass Requirement A's authorization rule.": 1,
+      "Whether the access right in Requirement B is exclusive or can coexist with other rights is not specified.": 1
+    },
+    "explicit_human_review_count": 0,
+    "explicit_human_review_rate_among_uncertain": 0.0,
+    "uncertain_without_review_flag": 18
+  },
+  "phase1_view_abstention": {
+    "semantic": {
+      "evaluated_pairs": 913,
+      "compatible": 883,
+      "incompatible": 19,
+      "uncertain": 11,
+      "missing": 0,
+      "abstention_rate": 0.012
+    },
+    "logic": {
+      "evaluated_pairs": 913,
+      "compatible": 882,
+      "incompatible": 9,
+      "uncertain": 22,
+      "missing": 0,
+      "abstention_rate": 0.0241
+    },
+    "feasibility": {
+      "evaluated_pairs": 913,
+      "compatible": 904,
+      "incompatible": 5,
+      "uncertain": 4,
+      "missing": 0,
+      "abstention_rate": 0.0044
+    },
+    "goal": {
+      "evaluated_pairs": 913,
+      "compatible": 855,
+      "incompatible": 40,
+      "uncertain": 18,
+      "missing": 0,
+      "abstention_rate": 0.0197
+    }
+  },
+  "phase1_pairs_with_any_abstention": 45,
+  "phase1_any_abstention_rate": 0.0493,
+  "phase1_vote_patterns": [
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 828
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 24
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 11
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=uncertain",
+      "count": 11
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+      "count": 5
+    },
+    {
+      "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+      "count": 4
+    },
+    {
+      "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=uncertain",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+      "count": 3
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=uncertain",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=uncertain",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+      "count": 2
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=uncertain; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=compatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+      "count": 1
+    },
+    {
+      "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+      "count": 1
+    }
+  ],
+  "representative_uncertain_cases": [
+    {
+      "pair_id": "9_50",
+      "route_type": "canonical_candidate",
+      "confidence": 0.68,
+      "needs_human_review": false,
+      "uncertainty_source": "Requirement A lacks a defined response-time threshold, and Requirement B does not specify whether retrieval is synchronous, asynchronous, or resource-isolated.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 0.6,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "The logic agent assigns a confidence of 0.95 and declares no conflict, but fails to account for the synchronous, event-driven nature of Requirement B. If 'everytime a new house is sold' forces a blocking retrieval during a search, the requirements could directly conflict. The agent's high confidence is unsupported because it assumes an asynchronous implementation that is not specified.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A sets a vague performance expectation ('acceptable time') for search, while Requirement B mandates data retrieval whenever a new house is sold. The texts do not explicitly require blocking or synchronous retrieval, so incompatibility is not grounded. However, because A provides no measurable timing threshold and B provides no implementation detail about how retrieval is performed, compatibility cannot be concluded with high confidence from the pair alone."
+    },
+    {
+      "pair_id": "11_12",
+      "route_type": "canonical_candidate",
+      "confidence": 0.8,
+      "needs_human_review": false,
+      "uncertainty_source": "Requirement A uses an undefined subjective threshold ('acceptable time'), so it is unclear whether Requirement B's 60-second limit satisfies it.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.7,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "The feasibility agent claims that Requirement B provides a concrete threshold that can define 'acceptable' for Requirement A, but this assumes that 60 seconds is inherently acceptable without any evidence or stakeholder confirmation. The term 'acceptable time' could imply a stricter or different threshold (e.g., 10 seconds) that 60 seconds would violate, making the requirements potentially conflicting rather than complementary.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A requires report generation in an 'acceptable time,' but that term is undefined in the provided text. Requirement B sets a concrete maximum of 60 seconds. These can coexist if 60 seconds is considered acceptable, but they could conflict if stakeholders intended a stricter threshold. Because no explicit definition or refinement link is given, compatibility cannot be determined from the pair alone."
+    },
+    {
+      "pair_id": "11_17",
+      "route_type": "canonical_candidate",
+      "confidence": 0.67,
+      "needs_human_review": false,
+      "uncertainty_source": "Whether CMA report generation requires internet-dependent data/services, especially during offline mode, is unspecified.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "uncertain",
+          "confidence": 0.6,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "The feasibility agent asserts with 0.95 confidence that CMA report generation can be performed locally without internet connectivity, but provides no evidence or domain-specific reasoning to support this assumption. The hidden assumption acknowledges that real-time cloud processing or external data sources might be required, yet the agent dismisses this possibility without justification.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A imposes a timing constraint on CMA report generation, while Requirement B requires offline operation during internet outages. The pair does not state whether CMA report generation depends on online data or services, so no direct conflict is grounded from the text alone, but compatibility cannot be confirmed either."
+    },
+    {
+      "pair_id": "14_17",
+      "route_type": "canonical_candidate",
+      "confidence": 0.78,
+      "needs_human_review": false,
+      "uncertainty_source": "Whether hourly synchronization requires internet access and whether offline mode prohibits or merely defers synchronization is not specified.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "semantic",
+        "challenge": "The semantic agent assumes that 'operate in offline mode' means no synchronization capability whatsoever, but this is not stated in the requirements. Offline mode could include queuing sync tasks for later execution when connectivity is restored.",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "The pair does not establish a grounded contradiction from the text alone. Requirement A unconditionally requires synchronization every hour, while Requirement B requires offline mode when internet is unavailable. A conflict exists only if synchronizing with the office system necessarily requires internet and offline mode forbids synchronization, but those points are not explicitly stated. Compatibility also depends on unstated assumptions such as deferred sync or queued operation. Therefore the safest text-grounded judgment is uncertain."
+    },
+    {
+      "pair_id": "17_35",
+      "route_type": "canonical_candidate",
+      "confidence": 0.79,
+      "needs_human_review": false,
+      "uncertainty_source": "Calling technology and the scope of offline mode are unspecified.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.3,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.85,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "uncertain",
+          "confidence": 0.7,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "The agent assumes that 'calling' will be implemented via cellular voice networks and that the device has cellular hardware capable of voice calls, but neither requirement specifies the calling technology or device capabilities. The system could be a desktop app, a tablet without cellular, or rely on VoIP, which would conflict with offline mode.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A requires the product to operate in offline mode when internet is unavailable, while Requirement B requires the system to be able to call the seller or buyer. The pair alone does not specify whether calling uses cellular telephony, VoIP, or another mechanism, nor whether the calling capability must function during offline mode. Because compatibility depends on unstated implementation and platform details, no grounded conflict or guaranteed coexistence can be concluded from the text alone."
+    },
+    {
+      "pair_id": "26_29",
+      "route_type": "canonical_candidate",
+      "confidence": 0.83,
+      "needs_human_review": false,
+      "uncertainty_source": "Role-term ambiguity: the requirements do not define whether 'real estate agent' and 'registered realtor' denote the same allowed user class.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "uncertain",
+          "confidence": 0.4,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "incompatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "The incompatibility verdict depends entirely on the unsupported assumption that 'real estate agent' and 'registered realtor' are not synonymous in the system context, yet no evidence is provided to justify this assumption over the equally plausible interpretation that they refer to the same role.",
+        "rebuttal_verdict_revised": false
+      },
+      "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B requires MLS querying for a real estate agent. From the text alone, it is not established whether 'real estate agent' is identical to, a subset of, or broader than 'registered realtor'. Because the relation between these roles is undefined, neither incompatibility nor compatibility is fully grounded by the requirements alone."
+    },
+    {
+      "pair_id": "26_44",
+      "route_type": "canonical_candidate",
+      "confidence": 0.7,
+      "needs_human_review": false,
+      "uncertainty_source": "none",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 1.0,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "compatible",
+          "confidence": 0.8,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "The compatibility verdict depends entirely on the unsupported assumption that 'the buyer is a registered realtor,' which contradicts the standard domain meaning of 'buyer' as a client/consumer distinct from a realtor agent.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B says the buyer shall be able to view all MLS listings. A direct incompatibility is not fully grounded from the text alone because the pair does not explicitly state whether 'the buyer' is necessarily a non-realtor or whether viewing listings must occur through the same system access restricted by A. Likewise, compatibility would require assumptions not stated explicitly. Therefore the pair is ambiguous rather than definitively compatible or incompatible."
+    },
+    {
+      "pair_id": "26_45",
+      "route_type": "canonical_candidate",
+      "confidence": 0.84,
+      "needs_human_review": false,
+      "uncertainty_source": "term ambiguity: 'agent' is not explicitly defined relative to 'registered realtor'",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 0.9,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.7,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "semantic",
+        "challenge": "The semantic agent claims incompatibility based on the assumption that 'agent' and 'registered realtor' are not equivalent, but this ignores the standard domain interpretation where 'agent' in MLS contexts is a licensed real estate agent, which is synonymous with 'registered realtor'. The agent fails to justify why this common equivalence should be rejected.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B grants lookup and update capability to 'the agent.' The pair is compatible if 'the agent' is a registered realtor, but incompatible if 'agent' includes someone outside that class. Because the text does not define 'agent' as equivalent to or distinct from 'registered realtor,' neither compatibility nor incompatibility is forced by the requirements alone."
+    },
+    {
+      "pair_id": "26_47",
+      "route_type": "canonical_candidate",
+      "confidence": 0.72,
+      "needs_human_review": false,
+      "uncertainty_source": "Whether 'buyer' is necessarily a non-realtor distinct role is not explicitly defined in the requirement text.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "incompatible",
+          "confidence": 0.95,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "feasibility",
+        "challenge": "The coexistence path assumes 'buyer' refers to a registered realtor acting on behalf of a buyer, but this interpretation is not supported by the requirement text and contradicts the plain meaning of 'buyer' as a distinct role.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A explicitly restricts system access to registered realtors, and Requirement B requires a buyer to perform a system action. This creates a likely tension, but incompatibility is not fully forced by the text alone because the requirements do not explicitly state that a buyer cannot also be a registered realtor. The conflict therefore depends on an unstated role assumption."
+    },
+    {
+      "pair_id": "26_51",
+      "route_type": "canonical_candidate",
+      "confidence": 0.76,
+      "needs_human_review": false,
+      "uncertainty_source": "The requirements do not explicitly state that the seller agent is necessarily a registered realtor, nor explicitly tie the 'mark as sold' action to system access.",
+      "phase1_votes": {
+        "semantic": {
+          "verdict": "compatible",
+          "confidence": 1.0,
+          "model": "deepseek-v4-flash"
+        },
+        "logic": {
+          "verdict": "uncertain",
+          "confidence": 0.7,
+          "model": "deepseek-v4-pro"
+        },
+        "feasibility": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "kimi-k2.6"
+        },
+        "goal": {
+          "verdict": "compatible",
+          "confidence": 0.95,
+          "model": "qwen3.7-plus"
+        }
+      },
+      "phase2_cross_exam": {
+        "target": "logic",
+        "challenge": "The logic agent's verdict of 'uncertain' is based on the unsupported inference that the seller agent might not be a registered realtor, which is not grounded in the requirements and contradicts the standard domain assumption shared by all other agents.",
+        "rebuttal_verdict_revised": true
+      },
+      "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B restricts the specific 'mark as sold' action to the seller agent. These can coexist if the seller agent is a registered realtor and the action occurs within the system, but that relationship is not explicitly stated in the requirement text."
+    }
+  ]
+}

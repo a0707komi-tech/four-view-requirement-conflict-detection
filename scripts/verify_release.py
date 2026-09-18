@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 import re
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -145,13 +146,14 @@ def write_manifest(root: Path) -> Path:
         )
     manifest = {
         "release": "four-view-requirement-conflict-detection",
-        "version": "1.0.0",
-        "date": "2026-07-17",
+        "version": "1.1.0",
+        "date": date.today().isoformat(),
         "selection": {
             "datasets": list(DATASET_SLUGS),
             "etcs_result": "round4",
             "agent_record_rule": "latest successful record per pair",
             "duplicate_policy": "duplicate is not a conflict-positive class",
+            "uncertainty_reporting": "offline report generated from stored final verdicts and agent records",
             "excluded_experiments": ["ablation", "baseline", "threshold/end-to-end"],
         },
         "files": entries,

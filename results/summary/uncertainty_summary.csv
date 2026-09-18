@@ -1,0 +1,6 @@
+dataset,final_pairs,canonical_candidate_pairs,compatible,incompatible,uncertain,duplicate_route,uncertainty_rate,human_review_true_among_uncertain,human_review_rate_among_uncertain,uncertain_without_review_flag,phase1_any_abstention,phase1_any_abstention_rate,semantic_uncertain,semantic_abstention_rate,logic_uncertain,logic_abstention_rate,feasibility_uncertain,feasibility_abstention_rate,goal_uncertain,goal_abstention_rate
+ETCS-GOLD,1599,778,1420,82,97,20,0.0607,95,0.9794,2,139,0.1787,59,0.0758,94,0.1208,12,0.0154,2,0.0026
+OpenAPI Specification 3.0,870,594,834,32,4,10,0.0046,4,1.0,0,34,0.0572,11,0.0185,26,0.0438,0,0.0,0,0.0
+promise-project2,913,913,887,8,18,0,0.0197,0,0.0,18,45,0.0493,11,0.012,22,0.0241,4,0.0044,18,0.0197
+Broker-All,654,654,636,9,9,0,0.0138,0,0.0,9,20,0.0306,8,0.0122,13,0.0199,0,0.0,2,0.0031
+Library-Gold,2875,2875,2817,17,41,0,0.0143,0,0.0,41,103,0.0358,63,0.0219,48,0.0167,19,0.0066,49,0.017

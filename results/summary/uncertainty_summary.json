@@ -1,0 +1,2443 @@
+{
+  "datasets": [
+    {
+      "dataset": "ETCS-GOLD",
+      "slug": "ETCS-GOLD",
+      "scope": {
+        "final_pairs": 1599,
+        "canonical_candidate_pairs": 778,
+        "duplicate_route_pairs": 20,
+        "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+        "final_uncertainty_denominator": "all final verdict rows"
+      },
+      "final_outcomes": {
+        "compatible": 1420,
+        "incompatible": 82,
+        "uncertain": 97
+      },
+      "route_counts": {
+        "canonical_candidate": 778,
+        "canonical_alias": 801,
+        "duplicate_group_rule": 20
+      },
+      "uncertainty": {
+        "count": 97,
+        "rate": 0.0607,
+        "by_route": {
+          "canonical_candidate": 50,
+          "canonical_alias": 47
+        },
+        "by_resolution_stage": {
+          "canonical_candidate": 50,
+          "canonical_alias": 47
+        },
+        "raw_sources": {
+          "unverifiable_assumption": 55,
+          "missing_domain_knowledge": 22,
+          "ambiguous_requirement": 18,
+          "verifiable_assumption": 2
+        },
+        "explicit_human_review_count": 95,
+        "explicit_human_review_rate_among_uncertain": 0.9794,
+        "uncertain_without_review_flag": 2
+      },
+      "phase1_view_abstention": {
+        "semantic": {
+          "evaluated_pairs": 778,
+          "compatible": 673,
+          "incompatible": 46,
+          "uncertain": 59,
+          "missing": 0,
+          "abstention_rate": 0.0758
+        },
+        "logic": {
+          "evaluated_pairs": 778,
+          "compatible": 637,
+          "incompatible": 47,
+          "uncertain": 94,
+          "missing": 0,
+          "abstention_rate": 0.1208
+        },
+        "feasibility": {
+          "evaluated_pairs": 778,
+          "compatible": 691,
+          "incompatible": 75,
+          "uncertain": 12,
+          "missing": 0,
+          "abstention_rate": 0.0154
+        },
+        "goal": {
+          "evaluated_pairs": 778,
+          "compatible": 673,
+          "incompatible": 103,
+          "uncertain": 2,
+          "missing": 0,
+          "abstention_rate": 0.0026
+        }
+      },
+      "phase1_pairs_with_any_abstention": 139,
+      "phase1_any_abstention_rate": 0.1787,
+      "phase1_vote_patterns": [
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 572
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 47
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 20
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 15
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 10
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 8
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 8
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 8
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 7
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 7
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=compatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+          "count": 5
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 5
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=compatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=compatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=compatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=uncertain; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=uncertain; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=uncertain; goal=uncertain",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        }
+      ],
+      "representative_uncertain_cases": [
+        {
+          "pair_id": "1_61",
+          "route_type": "canonical_candidate",
+          "confidence": 0.78,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You assume operational status is 'information to allow him to drive the train safely.' What in the requirement text grounds that equivalence, and how do you rule out non-safety-related status displays?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair is textually anchored to driver-facing information, but no conflict is established from the text alone. A requires the current operational status to be shown on the DMI. B restricts ETCS from providing information that allows safe driving unless speed is below 400 km/h. The decisive missing premise is whether A’s “current operational status” is, in this pair, ETCS-provided safe-driving information covered by B. The strongest incompatibility arguments depended on that assumption and were later withdrawn. The strongest compatibility story also depends on assuming operational status is outside B’s restricted class. Because that classification is unresolved by the pair text, interference/inconsistency is not proven."
+        },
+        {
+          "pair_id": "3_10",
+          "route_type": "canonical_candidate",
+          "confidence": 0.86,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 1.0,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You assume Requirement A mandates ETCS to use radio, but the text only says 'Basic track to train... via radio' without specifying ETCS as the provider. What text grounds your assumption that both requirements target the same system?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair is textually anchored to the same capability: track-to-train and train-to-track information via continuous radio. If both applied to ETCS, they would be inconsistent, because A affirms that radio-based exchange is a basic function while B says ETCS shall not be required to provide that function. But the decisive scope premise is missing: A never names ETCS, while B does. A may describe a broader or different system, so the conflict cannot be conclusively grounded from the pair text alone."
+        },
+        {
+          "pair_id": "4_61",
+          "route_type": "canonical_candidate",
+          "confidence": 0.83,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You assume an acknowledgment request is 'information to allow him to drive the train safely.' Where in the text is that equivalence grounded, and why isn't it equally plausible that the request is a procedural command outside that safety-information scope?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair is only weakly anchored through possible driver-facing information. Requirement A governs acknowledgement/brake behavior for level transitions requested from trackside; Requirement B limits what ETCS may provide to the driver above 400 km/h. A conflict is not textually established because A never says ETCS provides the acknowledgement request, nor that the request is the kind of 'information to allow him to drive the train safely' covered by B. But compatibility is also not decisively grounded, because that same linkage is plausible. Since whether interference exists depends on those unresolved assumptions, the strongest surviving synthesis is uncertain."
+        },
+        {
+          "pair_id": "5_7",
+          "route_type": "canonical_candidate",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You treat 'in principle' as a general exception mechanism, but what text in Requirement B explicitly permits an exception for STM transitions that require driver acknowledgement?",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair is anchored to the same subject—transition behavior—but only overlaps if transitions to/from STM can occur while the train is moving. Requirement A requires driver acknowledgement for STM transitions; Requirement B says moving transitions shall in principle occur automatically. That suggests potential interference on the same mechanism, but the conflict is not fully established from the text alone because A does not say those STM transitions happen while moving, and B applies only in that operating condition. Also, B’s qualifier “in principle” weakens an absolute inconsistency claim. So a conflict is plausible, but a decisive text-grounded overlap premise is missing."
+        },
+        {
+          "pair_id": "5_8",
+          "route_type": "canonical_candidate",
+          "confidence": 0.84,
+          "needs_human_review": true,
+          "uncertainty_source": "missing_domain_knowledge",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "You assume STM transitions are a subset of level transitions. Where in the requirement pair text is that subset relation explicitly stated or necessarily implied?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The apparent clash is strong only if transitions to/from national Operation (STM) are also “level transitions.” If they are, A requires driver acknowledgement while B forbids any driver input, creating a direct inconsistency over the same transition event. But that overlap is not established by the pair text itself. A is anchored to STM transitions; B is anchored to level transitions. Since the decisive premise that these are the same operational class is missing, neither incompatibility nor compatibility is fully grounded from the text alone."
+        },
+        {
+          "pair_id": "5_13",
+          "route_type": "canonical_candidate",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You equate 'transitions to and from national Operation (STM)' with 'compatibility with national systems.' What text in Requirement A proves the ETCS must be compatible with, rather than merely interface during a transition from, those national systems?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair overlaps on ETCS and a national-operation context, but no conflict is textually established. A requires a driver acknowledgement request during transitions to and from national Operation (STM). B forbids ETCS compatibility with national systems listed in the CCS TSI. The strongest incompatibility claim depends on an unstated premise that handling STM transitions necessarily requires compatibility with those listed national systems. The surviving compatible reading is also not fully decisive because the text does not clarify whether STM in A is one of the national systems covered by B. Without that missing premise, interference, inconsistency, or impossible joint satisfaction is not proven from the pair alone."
+        },
+        {
+          "pair_id": "5_14",
+          "route_type": "canonical_alias",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You treat 'in principle' as a general exception mechanism, but what text in Requirement B explicitly permits an exception for STM transitions that require driver acknowledgement?",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair is anchored to the same subject—transition behavior—but only overlaps if transitions to/from STM can occur while the train is moving. Requirement A requires driver acknowledgement for STM transitions; Requirement B says moving transitions shall in principle occur automatically. That suggests potential interference on the same mechanism, but the conflict is not fully established from the text alone because A does not say those STM transitions happen while moving, and B applies only in that operating condition. Also, B’s qualifier “in principle” weakens an absolute inconsistency claim. So a conflict is plausible, but a decisive text-grounded overlap premise is missing."
+        },
+        {
+          "pair_id": "5_34",
+          "route_type": "canonical_candidate",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "ambiguous_requirement",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "You assume acknowledgement is a post-initiation action that does not preclude automatic initiation. Where in the requirement texts is this temporal separation grounded, and how do you rule out that acknowledgement is part of the initiation itself?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair is textually anchored to an overlapping case: STM transitions that occur while the train is stationary. A requires ETCS to request driver acknowledgement for STM transitions; B requires stationary transitions to be initiated automatically or manually as appropriate. No direct conflict is stated unless 'driver acknowledgement' is treated as part of initiation or 'automatic initiation' is read to exclude any required driver action. The text itself does not define that relationship. The compatible reading relies on a stage split (automatic initiation, later acknowledgement), but that split is not clearly grounded in the pair. Because the conflict turns on an unresolved assumption about initiation versus acknowledgement, the safest judgment is uncertain."
+        },
+        {
+          "pair_id": "5_37",
+          "route_type": "canonical_candidate",
+          "confidence": 0.73,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 1.0,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You assume transitions may occur above 100 km/h, but the text does not state that. Why is this unsupported assumption decisive for 'uncertain' rather than concluding no conflict is grounded?",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair is anchored to the same system (ETCS), but not to a clearly shared operating condition. A appears to require ETCS to request driver acknowledgement for STM transitions in general, while B limits ETCS functionality to speeds at or below 100 km/h. A text-grounded conflict would arise only if STM transitions must or may occur above 100 km/h, because ETCS then could not perform A. The pair itself does not state transition speeds or whether A is implicitly limited to ETCS’s functional envelope. Since both compatibility and incompatibility hinge on that unresolved premise, no conflict relation is decisively grounded from the pair alone."
+        },
+        {
+          "pair_id": "5_48",
+          "route_type": "canonical_alias",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "ambiguous_requirement",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "You assume acknowledgement is a post-initiation action that does not preclude automatic initiation. Where in the requirement texts is this temporal separation grounded, and how do you rule out that acknowledgement is part of the initiation itself?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair is textually anchored to an overlapping case: STM transitions that occur while the train is stationary. A requires ETCS to request driver acknowledgement for STM transitions; B requires stationary transitions to be initiated automatically or manually as appropriate. No direct conflict is stated unless 'driver acknowledgement' is treated as part of initiation or 'automatic initiation' is read to exclude any required driver action. The text itself does not define that relationship. The compatible reading relies on a stage split (automatic initiation, later acknowledgement), but that split is not clearly grounded in the pair. Because the conflict turns on an unresolved assumption about initiation versus acknowledgement, the safest judgment is uncertain."
+        }
+      ]
+    },
+    {
+      "dataset": "OpenAPI Specification 3.0",
+      "slug": "OpenAPI-Specification-3.0",
+      "scope": {
+        "final_pairs": 870,
+        "canonical_candidate_pairs": 594,
+        "duplicate_route_pairs": 10,
+        "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+        "final_uncertainty_denominator": "all final verdict rows"
+      },
+      "final_outcomes": {
+        "compatible": 834,
+        "incompatible": 32,
+        "uncertain": 4
+      },
+      "route_counts": {
+        "canonical_candidate": 594,
+        "canonical_alias": 266,
+        "duplicate_group_rule": 10
+      },
+      "uncertainty": {
+        "count": 4,
+        "rate": 0.0046,
+        "by_route": {
+          "canonical_candidate": 3,
+          "canonical_alias": 1
+        },
+        "by_resolution_stage": {
+          "canonical_candidate": 3,
+          "canonical_alias": 1
+        },
+        "raw_sources": {
+          "unverifiable_assumption": 4
+        },
+        "explicit_human_review_count": 4,
+        "explicit_human_review_rate_among_uncertain": 1.0,
+        "uncertain_without_review_flag": 0
+      },
+      "phase1_view_abstention": {
+        "semantic": {
+          "evaluated_pairs": 594,
+          "compatible": 569,
+          "incompatible": 14,
+          "uncertain": 11,
+          "missing": 0,
+          "abstention_rate": 0.0185
+        },
+        "logic": {
+          "evaluated_pairs": 594,
+          "compatible": 553,
+          "incompatible": 15,
+          "uncertain": 26,
+          "missing": 0,
+          "abstention_rate": 0.0438
+        },
+        "feasibility": {
+          "evaluated_pairs": 594,
+          "compatible": 542,
+          "incompatible": 52,
+          "uncertain": 0,
+          "missing": 0,
+          "abstention_rate": 0.0
+        },
+        "goal": {
+          "evaluated_pairs": 594,
+          "compatible": 555,
+          "incompatible": 39,
+          "uncertain": 0,
+          "missing": 0,
+          "abstention_rate": 0.0
+        }
+      },
+      "phase1_pairs_with_any_abstention": 34,
+      "phase1_any_abstention_rate": 0.0572,
+      "phase1_vote_patterns": [
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 515
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=compatible",
+          "count": 19
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 14
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 13
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 7
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=compatible",
+          "count": 1
+        }
+      ],
+      "representative_uncertain_cases": [
+        {
+          "pair_id": "5_20",
+          "route_type": "canonical_candidate",
+          "confidence": 0.76,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "semantic",
+            "challenge": "You assume the version field in Requirement B contains a semantic version number whose major.minor is the same as in Requirement A. Where in the text is that identity established?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair does not textually establish that Requirement B’s `version` field is the same semantic version number referenced in Requirement A. A speaks about the major.minor portion of a semantic version number and assigns it the meaning of the OAS feature set. B speaks about the Info Object’s version field reflecting the deployed API implementation version and being updated on production release. If these are the same version identifier, there may be inconsistency; but that identity is a decisive unstated premise. Without it, no text-grounded interference, inconsistency, or impossible joint satisfaction is established from the pair alone."
+        },
+        {
+          "pair_id": "5_21",
+          "route_type": "canonical_candidate",
+          "confidence": 0.84,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.4,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "What text in the pair establishes that 'the semantic version number' in Requirement A and 'the Info Object version field' in Requirement B refer to the same field, rather than to distinct version fields in the specification?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair does not textually establish a shared target strongly enough to ground conflict. Requirement A speaks of \"the semantic version number\" whose major.minor designates the OAS feature set, while Requirement B specifically constrains the \"Info Object version field\" to represent the OpenAPI document version, not the specification version. A conflict exists only if A’s semantic version number is the same field as B’s Info Object version field, but that identity is not stated in the pair. Without that decisive overlap premise, interference, inconsistency, and impossible joint satisfaction are not established from the text alone."
+        },
+        {
+          "pair_id": "13_27",
+          "route_type": "canonical_candidate",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You claim incompatibility because two parameters cannot share the same name and location, but Requirement B explicitly says both declarations MUST use the same name. How does that create a conflict rather than a single, shared placeholder?",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair is only weakly anchored to the same target. A constrains the syntax of OpenAPI path templates; B constrains how renamed parameters are declared during a transition, but does not clearly say the parameter is a path parameter or that two distinct placeholder names must coexist in one template. The incompatibility arguments rely on extra OpenAPI assumptions: that B applies to path parameters here, that template placeholder names must match declaration names, and that the two declarations correspond to different names despite B also saying they must use the same name at the same location. Without those decisive assumptions, no text-grounded interference, inconsistency, or impossible joint satisfaction between A and B is established from the pair alone."
+        },
+        {
+          "pair_id": "24_27",
+          "route_type": "canonical_alias",
+          "confidence": 0.77,
+          "needs_human_review": true,
+          "uncertainty_source": "unverifiable_assumption",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You claim incompatibility because two parameters cannot share the same name and location, but Requirement B explicitly says both declarations MUST use the same name. How does that create a conflict rather than a single, shared placeholder?",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair is only weakly anchored to the same target. A constrains the syntax of OpenAPI path templates; B constrains how renamed parameters are declared during a transition, but does not clearly say the parameter is a path parameter or that two distinct placeholder names must coexist in one template. The incompatibility arguments rely on extra OpenAPI assumptions: that B applies to path parameters here, that template placeholder names must match declaration names, and that the two declarations correspond to different names despite B also saying they must use the same name at the same location. Without those decisive assumptions, no text-grounded interference, inconsistency, or impossible joint satisfaction between A and B is established from the pair alone."
+        }
+      ]
+    },
+    {
+      "dataset": "promise-project2",
+      "slug": "promise-project2",
+      "scope": {
+        "final_pairs": 913,
+        "canonical_candidate_pairs": 913,
+        "duplicate_route_pairs": 0,
+        "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+        "final_uncertainty_denominator": "all final verdict rows"
+      },
+      "final_outcomes": {
+        "compatible": 887,
+        "uncertain": 18,
+        "incompatible": 8
+      },
+      "route_counts": {
+        "canonical_candidate": 913
+      },
+      "uncertainty": {
+        "count": 18,
+        "rate": 0.0197,
+        "by_route": {
+          "canonical_candidate": 18
+        },
+        "by_resolution_stage": {
+          "canonical_candidate": 18
+        },
+        "raw_sources": {
+          "Requirement A lacks a defined response-time threshold, and Requirement B does not specify whether retrieval is synchronous, asynchronous, or resource-isolated.": 1,
+          "Requirement A uses an undefined subjective threshold ('acceptable time'), so it is unclear whether Requirement B's 60-second limit satisfies it.": 1,
+          "Whether CMA report generation requires internet-dependent data/services, especially during offline mode, is unspecified.": 1,
+          "Whether hourly synchronization requires internet access and whether offline mode prohibits or merely defers synchronization is not specified.": 1,
+          "Calling technology and the scope of offline mode are unspecified.": 1,
+          "Role-term ambiguity: the requirements do not define whether 'real estate agent' and 'registered realtor' denote the same allowed user class.": 1,
+          "none": 1,
+          "term ambiguity: 'agent' is not explicitly defined relative to 'registered realtor'": 1,
+          "Whether 'buyer' is necessarily a non-realtor distinct role is not explicitly defined in the requirement text.": 1,
+          "The requirements do not explicitly state that the seller agent is necessarily a registered realtor, nor explicitly tie the 'mark as sold' action to system access.": 1,
+          "The relationship between 'agent' and 'registered realtor' is unspecified in the requirement text.": 1,
+          "Requirement B's temporal condition ('appointments made less than 24 hours') is underspecified, and the requirements do not define whether A applies universally without exceptions.": 1,
+          "Ambiguity in 'appointments made less than 24 hours' and whether B's 'notifications' covers the response-notification event in A.": 1,
+          "Ambiguity in the scope of 'accept' and whether Requirement B refers to posts newly accepted by the same system versus legacy/imported existing MLS posts.": 1,
+          "Ambiguity in whether 'removed' means no longer viewable and whether 'all MLS listings' includes only active listings or also archived/historical ones.": 1,
+          "ambiguity over whether Requirement B's view-only zone access right is exclusive or can coexist with other rights that satisfy Requirement A": 1,
+          "Whether 'update all MLS listing properties' includes changing listing status to 'sold' in a way that would bypass Requirement A's authorization rule.": 1,
+          "Whether the access right in Requirement B is exclusive or can coexist with other rights is not specified.": 1
+        },
+        "explicit_human_review_count": 0,
+        "explicit_human_review_rate_among_uncertain": 0.0,
+        "uncertain_without_review_flag": 18
+      },
+      "phase1_view_abstention": {
+        "semantic": {
+          "evaluated_pairs": 913,
+          "compatible": 883,
+          "incompatible": 19,
+          "uncertain": 11,
+          "missing": 0,
+          "abstention_rate": 0.012
+        },
+        "logic": {
+          "evaluated_pairs": 913,
+          "compatible": 882,
+          "incompatible": 9,
+          "uncertain": 22,
+          "missing": 0,
+          "abstention_rate": 0.0241
+        },
+        "feasibility": {
+          "evaluated_pairs": 913,
+          "compatible": 904,
+          "incompatible": 5,
+          "uncertain": 4,
+          "missing": 0,
+          "abstention_rate": 0.0044
+        },
+        "goal": {
+          "evaluated_pairs": 913,
+          "compatible": 855,
+          "incompatible": 40,
+          "uncertain": 18,
+          "missing": 0,
+          "abstention_rate": 0.0197
+        }
+      },
+      "phase1_pairs_with_any_abstention": 45,
+      "phase1_any_abstention_rate": 0.0493,
+      "phase1_vote_patterns": [
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 828
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 24
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 11
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 11
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 5
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=uncertain",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=uncertain",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        }
+      ],
+      "representative_uncertain_cases": [
+        {
+          "pair_id": "9_50",
+          "route_type": "canonical_candidate",
+          "confidence": 0.68,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement A lacks a defined response-time threshold, and Requirement B does not specify whether retrieval is synchronous, asynchronous, or resource-isolated.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent assigns a confidence of 0.95 and declares no conflict, but fails to account for the synchronous, event-driven nature of Requirement B. If 'everytime a new house is sold' forces a blocking retrieval during a search, the requirements could directly conflict. The agent's high confidence is unsupported because it assumes an asynchronous implementation that is not specified.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A sets a vague performance expectation ('acceptable time') for search, while Requirement B mandates data retrieval whenever a new house is sold. The texts do not explicitly require blocking or synchronous retrieval, so incompatibility is not grounded. However, because A provides no measurable timing threshold and B provides no implementation detail about how retrieval is performed, compatibility cannot be concluded with high confidence from the pair alone."
+        },
+        {
+          "pair_id": "11_12",
+          "route_type": "canonical_candidate",
+          "confidence": 0.8,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement A uses an undefined subjective threshold ('acceptable time'), so it is unclear whether Requirement B's 60-second limit satisfies it.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent claims that Requirement B provides a concrete threshold that can define 'acceptable' for Requirement A, but this assumes that 60 seconds is inherently acceptable without any evidence or stakeholder confirmation. The term 'acceptable time' could imply a stricter or different threshold (e.g., 10 seconds) that 60 seconds would violate, making the requirements potentially conflicting rather than complementary.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires report generation in an 'acceptable time,' but that term is undefined in the provided text. Requirement B sets a concrete maximum of 60 seconds. These can coexist if 60 seconds is considered acceptable, but they could conflict if stakeholders intended a stricter threshold. Because no explicit definition or refinement link is given, compatibility cannot be determined from the pair alone."
+        },
+        {
+          "pair_id": "11_17",
+          "route_type": "canonical_candidate",
+          "confidence": 0.67,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether CMA report generation requires internet-dependent data/services, especially during offline mode, is unspecified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent asserts with 0.95 confidence that CMA report generation can be performed locally without internet connectivity, but provides no evidence or domain-specific reasoning to support this assumption. The hidden assumption acknowledges that real-time cloud processing or external data sources might be required, yet the agent dismisses this possibility without justification.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A imposes a timing constraint on CMA report generation, while Requirement B requires offline operation during internet outages. The pair does not state whether CMA report generation depends on online data or services, so no direct conflict is grounded from the text alone, but compatibility cannot be confirmed either."
+        },
+        {
+          "pair_id": "14_17",
+          "route_type": "canonical_candidate",
+          "confidence": 0.78,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether hourly synchronization requires internet access and whether offline mode prohibits or merely defers synchronization is not specified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "semantic",
+            "challenge": "The semantic agent assumes that 'operate in offline mode' means no synchronization capability whatsoever, but this is not stated in the requirements. Offline mode could include queuing sync tasks for later execution when connectivity is restored.",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "The pair does not establish a grounded contradiction from the text alone. Requirement A unconditionally requires synchronization every hour, while Requirement B requires offline mode when internet is unavailable. A conflict exists only if synchronizing with the office system necessarily requires internet and offline mode forbids synchronization, but those points are not explicitly stated. Compatibility also depends on unstated assumptions such as deferred sync or queued operation. Therefore the safest text-grounded judgment is uncertain."
+        },
+        {
+          "pair_id": "17_35",
+          "route_type": "canonical_candidate",
+          "confidence": 0.79,
+          "needs_human_review": false,
+          "uncertainty_source": "Calling technology and the scope of offline mode are unspecified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The agent assumes that 'calling' will be implemented via cellular voice networks and that the device has cellular hardware capable of voice calls, but neither requirement specifies the calling technology or device capabilities. The system could be a desktop app, a tablet without cellular, or rely on VoIP, which would conflict with offline mode.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires the product to operate in offline mode when internet is unavailable, while Requirement B requires the system to be able to call the seller or buyer. The pair alone does not specify whether calling uses cellular telephony, VoIP, or another mechanism, nor whether the calling capability must function during offline mode. Because compatibility depends on unstated implementation and platform details, no grounded conflict or guaranteed coexistence can be concluded from the text alone."
+        },
+        {
+          "pair_id": "26_29",
+          "route_type": "canonical_candidate",
+          "confidence": 0.83,
+          "needs_human_review": false,
+          "uncertainty_source": "Role-term ambiguity: the requirements do not define whether 'real estate agent' and 'registered realtor' denote the same allowed user class.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.4,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The incompatibility verdict depends entirely on the unsupported assumption that 'real estate agent' and 'registered realtor' are not synonymous in the system context, yet no evidence is provided to justify this assumption over the equally plausible interpretation that they refer to the same role.",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B requires MLS querying for a real estate agent. From the text alone, it is not established whether 'real estate agent' is identical to, a subset of, or broader than 'registered realtor'. Because the relation between these roles is undefined, neither incompatibility nor compatibility is fully grounded by the requirements alone."
+        },
+        {
+          "pair_id": "26_44",
+          "route_type": "canonical_candidate",
+          "confidence": 0.7,
+          "needs_human_review": false,
+          "uncertainty_source": "none",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 1.0,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.8,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The compatibility verdict depends entirely on the unsupported assumption that 'the buyer is a registered realtor,' which contradicts the standard domain meaning of 'buyer' as a client/consumer distinct from a realtor agent.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B says the buyer shall be able to view all MLS listings. A direct incompatibility is not fully grounded from the text alone because the pair does not explicitly state whether 'the buyer' is necessarily a non-realtor or whether viewing listings must occur through the same system access restricted by A. Likewise, compatibility would require assumptions not stated explicitly. Therefore the pair is ambiguous rather than definitively compatible or incompatible."
+        },
+        {
+          "pair_id": "26_45",
+          "route_type": "canonical_candidate",
+          "confidence": 0.84,
+          "needs_human_review": false,
+          "uncertainty_source": "term ambiguity: 'agent' is not explicitly defined relative to 'registered realtor'",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "semantic",
+            "challenge": "The semantic agent claims incompatibility based on the assumption that 'agent' and 'registered realtor' are not equivalent, but this ignores the standard domain interpretation where 'agent' in MLS contexts is a licensed real estate agent, which is synonymous with 'registered realtor'. The agent fails to justify why this common equivalence should be rejected.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B grants lookup and update capability to 'the agent.' The pair is compatible if 'the agent' is a registered realtor, but incompatible if 'agent' includes someone outside that class. Because the text does not define 'agent' as equivalent to or distinct from 'registered realtor,' neither compatibility nor incompatibility is forced by the requirements alone."
+        },
+        {
+          "pair_id": "26_47",
+          "route_type": "canonical_candidate",
+          "confidence": 0.72,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether 'buyer' is necessarily a non-realtor distinct role is not explicitly defined in the requirement text.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The coexistence path assumes 'buyer' refers to a registered realtor acting on behalf of a buyer, but this interpretation is not supported by the requirement text and contradicts the plain meaning of 'buyer' as a distinct role.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A explicitly restricts system access to registered realtors, and Requirement B requires a buyer to perform a system action. This creates a likely tension, but incompatibility is not fully forced by the text alone because the requirements do not explicitly state that a buyer cannot also be a registered realtor. The conflict therefore depends on an unstated role assumption."
+        },
+        {
+          "pair_id": "26_51",
+          "route_type": "canonical_candidate",
+          "confidence": 0.76,
+          "needs_human_review": false,
+          "uncertainty_source": "The requirements do not explicitly state that the seller agent is necessarily a registered realtor, nor explicitly tie the 'mark as sold' action to system access.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 1.0,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent's verdict of 'uncertain' is based on the unsupported inference that the seller agent might not be a registered realtor, which is not grounded in the requirements and contradicts the standard domain assumption shared by all other agents.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A restricts system access to registered realtors, while Requirement B restricts the specific 'mark as sold' action to the seller agent. These can coexist if the seller agent is a registered realtor and the action occurs within the system, but that relationship is not explicitly stated in the requirement text."
+        }
+      ]
+    },
+    {
+      "dataset": "Broker-All",
+      "slug": "Broker-All",
+      "scope": {
+        "final_pairs": 654,
+        "canonical_candidate_pairs": 654,
+        "duplicate_route_pairs": 0,
+        "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+        "final_uncertainty_denominator": "all final verdict rows"
+      },
+      "final_outcomes": {
+        "compatible": 636,
+        "incompatible": 9,
+        "uncertain": 9
+      },
+      "route_counts": {
+        "canonical_candidate": 654
+      },
+      "uncertainty": {
+        "count": 9,
+        "rate": 0.0138,
+        "by_route": {
+          "canonical_candidate": 9
+        },
+        "by_resolution_stage": {
+          "canonical_candidate": 9
+        },
+        "raw_sources": {
+          "Whether 'associated data' includes CDR and whether deleting subscriber accounts affects data required for annual broker invoicing are not specified.": 1,
+          "The terms 'broker account' and 'subscriber account' are not defined as disjoint, and the storage location of invoices created for broker accounts is not specified.": 1,
+          "Whether 'associated data' includes the CDR records required by monthly invoicing is not specified.": 1,
+          "Requirement B is ambiguous about whether 'associated data' includes issued invoices.": 1,
+          "Whether 'subscribers' accounts' in Requirement A includes closed accounts is unspecified.": 1,
+          "The term 'associated data' is undefined and may or may not include invoices.": 1,
+          "Ambiguity about whether 'identification numbers' in A and the 'unique number for subscription account' in B refer to the same identifier and how the generated number is structured.": 1,
+          "The requirements do not specify whether invoices constitute the required payment history/status records or whether deletion preserves those records elsewhere.": 1,
+          "Ambiguity over whether deletion counts as modifying data in a closed account, and whether Requirement B applies to closed accounts.": 1
+        },
+        "explicit_human_review_count": 0,
+        "explicit_human_review_rate_among_uncertain": 0.0,
+        "uncertain_without_review_flag": 9
+      },
+      "phase1_view_abstention": {
+        "semantic": {
+          "evaluated_pairs": 654,
+          "compatible": 627,
+          "incompatible": 19,
+          "uncertain": 8,
+          "missing": 0,
+          "abstention_rate": 0.0122
+        },
+        "logic": {
+          "evaluated_pairs": 654,
+          "compatible": 633,
+          "incompatible": 8,
+          "uncertain": 13,
+          "missing": 0,
+          "abstention_rate": 0.0199
+        },
+        "feasibility": {
+          "evaluated_pairs": 654,
+          "compatible": 644,
+          "incompatible": 10,
+          "uncertain": 0,
+          "missing": 0,
+          "abstention_rate": 0.0
+        },
+        "goal": {
+          "evaluated_pairs": 654,
+          "compatible": 611,
+          "incompatible": 41,
+          "uncertain": 2,
+          "missing": 0,
+          "abstention_rate": 0.0031
+        }
+      },
+      "phase1_pairs_with_any_abstention": 20,
+      "phase1_any_abstention_rate": 0.0306,
+      "phase1_vote_patterns": [
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 600
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 18
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 5
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=uncertain",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 1
+        }
+      ],
+      "representative_uncertain_cases": [
+        {
+          "pair_id": "5_8",
+          "route_type": "canonical_candidate",
+          "confidence": 0.63,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether 'associated data' includes CDR and whether deleting subscriber accounts affects data required for annual broker invoicing are not specified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent assumes broker accounts and subscriber accounts are logically distinct entities and that CDR data can be retained independently, but the requirements do not specify this separation. If subscriber accounts are nested under broker accounts and 'associated data' includes CDR, deletion could remove data needed for invoicing.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires annual invoicing of broker accounts using CDR, while Requirement B allows a broker to delete subscribers' accounts and associated data. The texts do not explicitly state whether subscriber-associated data includes the CDR needed for broker invoicing, nor whether broker and subscriber account data are separated. Because compatibility depends on that unspecified relationship, no grounded logical conflict or coexistence can be concluded from the pair alone."
+        },
+        {
+          "pair_id": "5_9",
+          "route_type": "canonical_candidate",
+          "confidence": 0.9,
+          "needs_human_review": false,
+          "uncertainty_source": "The terms 'broker account' and 'subscriber account' are not defined as disjoint, and the storage location of invoices created for broker accounts is not specified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent claims there is no direct logical contradiction because it assumes an invoice for a broker account could be stored in a subscriber account. However, Requirement A's action of 'invoicing broker accounts' inherently implies the invoice is associated with and stored in the broker account being invoiced, unless explicitly stated otherwise. The logic agent's assumption that storage can be decoupled from the invoiced account is unsupported and ignores the standard semantic implication of the verb 'invoice'.",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "Requirement A requires invoicing broker accounts annually using CDR, while Requirement B restricts invoice storage to a subscriber account. From the text alone, there is no explicit statement that broker accounts cannot also be subscriber accounts, nor that an invoice for a broker account must be stored in that same broker account. Because the conflict depends on unstated assumptions, incompatibility is not directly grounded by the requirements themselves."
+        },
+        {
+          "pair_id": "6_8",
+          "route_type": "canonical_candidate",
+          "confidence": 0.79,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether 'associated data' includes the CDR records required by monthly invoicing is not specified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "compatible",
+              "confidence": 0.7,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent claims the operations are 'orthogonal' and that 'no shared resource, protocol, or mechanism conflict exists,' but this ignores the explicit shared resource: CDR data. If 'associated data' in Requirement B includes the CDR records used for invoicing in Requirement A, then deletion directly removes the data needed for the monthly invoice, creating a clear resource conflict.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires monthly invoicing of broker accounts using CDR, while Requirement B allows a broker to delete his own subscribers' accounts and associated data. The text does not explicitly state whether the 'associated data' includes the CDR needed for invoicing. If it does, the requirements could conflict when deletion happens before monthly billing; if it does not, they can coexist. Because that key point is not grounded explicitly in the requirements, compatibility cannot be determined conclusively from the text alone."
+        },
+        {
+          "pair_id": "7_8",
+          "route_type": "canonical_candidate",
+          "confidence": 0.78,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B is ambiguous about whether 'associated data' includes issued invoices.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "The incompatibility verdict rests entirely on the unsupported assumption that invoices are necessarily part of 'associated data' of subscriber accounts. The requirement text does not define this relationship, and other agents correctly note that the system could be designed so that invoices are independent entities not deleted when accounts are removed.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A clearly prohibits deletion of issued invoices. Requirement B allows deletion of subscriber accounts and 'associated data,' but the text does not define whether issued invoices are included in that associated data. Because the relationship is unspecified, a conflict is not grounded by the requirement text alone, but compatibility is not guaranteed either."
+        },
+        {
+          "pair_id": "8_32",
+          "route_type": "canonical_candidate",
+          "confidence": 0.78,
+          "needs_human_review": false,
+          "uncertainty_source": "Whether 'subscribers' accounts' in Requirement A includes closed accounts is unspecified.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.8,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.5,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent assumes 'closed' and 'deleted' are distinct account states, but Requirement A does not specify that deletion is only allowed for non-closed accounts. If a broker attempts to delete a closed account, the operation would modify data in a closed account, directly violating Requirement B. The agent's compatibility claim hinges entirely on this unstated distinction.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A broadly grants brokers the ability to delete their own subscribers' accounts and associated data, while Requirement B forbids brokers from modifying data in closed accounts. A conflict arises only if Requirement A is intended to include closed accounts, because deletion/removal of associated data would then be a modification. The text does not explicitly state whether closed accounts are included or excluded, so incompatibility is not grounded from the requirements alone."
+        },
+        {
+          "pair_id": "8_40",
+          "route_type": "canonical_candidate",
+          "confidence": 0.85,
+          "needs_human_review": false,
+          "uncertainty_source": "The term 'associated data' is undefined and may or may not include invoices.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent assumes 'associated data' in Requirement A does not include invoices, but provides no justification for this exclusion. This assumption directly determines the compatibility verdict, yet it is asserted without evidence or reasoning.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A allows deleting a subscriber account and its 'associated data,' while Requirement B forbids deleting invoices. The pair is only incompatible if invoices are necessarily part of the 'associated data' covered by A. That inclusion is not stated in the requirement text, so a direct text-grounded conflict is not proven, but compatibility is also not guaranteed without clarifying scope."
+        },
+        {
+          "pair_id": "15_44",
+          "route_type": "canonical_candidate",
+          "confidence": 0.87,
+          "needs_human_review": false,
+          "uncertainty_source": "Ambiguity about whether 'identification numbers' in A and the 'unique number for subscription account' in B refer to the same identifier and how the generated number is structured.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "The goal agent asserts incompatibility based on the assumption that 'identification numbers' and 'unique number for subscription account' refer to the same entity, but this is not grounded in the text. The other agents correctly note this ambiguity and find compatibility or uncertainty. The goal agent's verdict hinges entirely on this unverified assumption.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A gives users the option to choose a custom prefix for their own identification numbers, while Requirement B says the system automatically creates a unique number for a subscription account at enrolment. The text does not explicitly state that these are the same identifier. If they are different, both can coexist; if they are the same, they may still coexist if the system generates the unique number while incorporating a user-chosen prefix. Because the relationship between the two identifiers is not grounded in the requirement text, incompatibility is not established."
+        },
+        {
+          "pair_id": "18_42",
+          "route_type": "canonical_candidate",
+          "confidence": 0.64,
+          "needs_human_review": false,
+          "uncertainty_source": "The requirements do not specify whether invoices constitute the required payment history/status records or whether deletion preserves those records elsewhere.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.9,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.85,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent claims compatibility by assuming soft deletion or a separate immutable audit trail, but neither requirement specifies such mechanisms. The agent does not ground this coexistence path in the actual text of the requirements, making the compatibility verdict unsupported.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires payment history and status to be recorded and accessible to authorized users, while Requirement B allows a broker to delete subscriber accounts and associated invoices. A direct conflict is not fully grounded by the text alone because the requirements do not explicitly state that invoices are the sole or required form of payment history, nor that deletion is permanent and removes all payment-history records. However, the pair creates a significant tension because deleting invoices could undermine accessibility of payment-related records."
+        },
+        {
+          "pair_id": "32_42",
+          "route_type": "canonical_candidate",
+          "confidence": 0.68,
+          "needs_human_review": false,
+          "uncertainty_source": "Ambiguity over whether deletion counts as modifying data in a closed account, and whether Requirement B applies to closed accounts.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.8,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "The assumption that an account becomes 'closed' immediately upon or as part of the deletion process is unsupported and speculative. Requirement B does not state that deletion closes the account, nor does Requirement A define deletion as a modification of a closed account. The conflict is manufactured by injecting an unstated temporal or causal link between deletion and closure.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A clearly forbids brokers from modifying data in closed accounts. Requirement B grants brokers the ability to delete their own subscribers' accounts and invoices, but the text does not state whether this includes closed accounts or whether deletion is treated as a prohibited data modification under A. A conflict exists only if deleting an account/invoice is within A's notion of modifying data in a closed account. That link is plausible but not explicit in the requirement text alone."
+        }
+      ]
+    },
+    {
+      "dataset": "Library-Gold",
+      "slug": "Library-Gold",
+      "scope": {
+        "final_pairs": 2875,
+        "canonical_candidate_pairs": 2875,
+        "duplicate_route_pairs": 0,
+        "phase1_denominator": "canonical_candidate pairs with stored Phase-1 votes",
+        "final_uncertainty_denominator": "all final verdict rows"
+      },
+      "final_outcomes": {
+        "compatible": 2817,
+        "uncertain": 41,
+        "incompatible": 17
+      },
+      "route_counts": {
+        "canonical_candidate": 2875
+      },
+      "uncertainty": {
+        "count": 41,
+        "rate": 0.0143,
+        "by_route": {
+          "canonical_candidate": 41
+        },
+        "by_resolution_stage": {
+          "canonical_candidate": 41
+        },
+        "raw_sources": {
+          "Requirement B is incomplete/fragmentary and lacks enough semantic content to compare reliably against Requirement A.": 1,
+          "The term 'real-time processing' is ambiguous in strictness and latency guarantees, and the requirements do not specify timing bounds or determinism expectations.": 1,
+          "Requirement B is incomplete/malformed and lacks a clear meaning.": 1,
+          "Requirement B is incomplete/ambiguous and lacks sufficient semantic content for pairwise analysis.": 1,
+          "Potential conflict depends on an unstated assumption about whether any system administrative staff rely on accessibility software.": 1,
+          "The requirement text does not define whether 'mobile application' and 'macOS-compatible client' can overlap.": 1,
+          "none": 2,
+          "Requirement B is incomplete and semantically unclear.": 1,
+          "Requirement B does not specify which users or roles can access the root shell.": 1,
+          "The requirements do not specify whether log files contain patron data or what 'full access' means in terms of authorized scope and security controls.": 1,
+          "Requirement B is incomplete and lacks a clear predicate or intent.": 1,
+          "Requirement B is incomplete and semantically ambiguous.": 1,
+          "The term 'live' in Requirement A is semantically ambiguous relative to 'real-time processing' in Requirement B.": 1,
+          "Requirement B is incomplete and semantically under-specified.": 1,
+          "The term 'root shell' is undefined and it is unclear whether it must be native to the Windows server or may be provided through another component or hosted environment.": 1,
+          "Requirement B is incomplete and ambiguous.": 1,
+          "Requirement B is incomplete and lacks enough semantic content to compare against Requirement A.": 1,
+          "The external Library Automation System's data model/interface is unspecified, so 'relies on the data structures' may or may not constrain the module's back-end technology.": 1,
+          "Requirement B is incomplete/malformed and cannot be semantically compared to Requirement A.": 1,
+          "Requirement B is incomplete/fragmentary and lacks enough meaning to compare against Requirement A.": 1,
+          "The requirements do not specify whether log files contain record numbers or whether full log access bypasses the user/group controls required for record numbers.": 1,
+          "Requirement B is underspecified about the subject of 'full access' to log files.": 1,
+          "Ambiguity over whether 'searches and reports ... during open hours' implies real-time interactive processing or can be satisfied by batch execution.": 1,
+          "Whether 'log files' fall within the 'tables and fields' governed by Requirement A, and who receives 'full access' in Requirement B, is not specified.": 1,
+          "Requirement B is incomplete/truncated, so its meaning cannot be reliably determined from the provided text alone.": 1,
+          "Requirement B is incomplete/truncated and lacks a clear propositional meaning.": 1,
+          "Requirement A is incomplete and lacks sufficient context to interpret.": 1,
+          "Requirement A is incomplete/ambiguous, so its actual constraint or intent is unknown.": 1,
+          "Requirement A is incomplete/underspecified, so its intended requirement cannot be determined from the provided text.": 1,
+          "Requirement A is incomplete/fragmentary and lacks a clear predicate or requirement meaning.": 1,
+          "Requirement A is incomplete/ambiguous, so its operative meaning is not recoverable from the provided text.": 1,
+          "Requirement A is incomplete/fragmented and missing its key predicate.": 1,
+          "Requirement A is malformed/incomplete and lacks a clear predicate or obligation.": 1,
+          "Requirement A is incomplete/ambiguous and lacks enough semantic content to assess interaction with Requirement B.": 1,
+          "Requirement A is incomplete/underspecified.": 1,
+          "Requirement A is grammatically incomplete and lacks enough context to determine what it requires about data and transaction logs.": 1,
+          "Requirement A is fragmentary/ambiguous and lacks enough semantic content for grounded comparison.": 1,
+          "Requirement A is incomplete and lacks sufficient context for interpretation.": 1,
+          "Whether Requirement A's functions are part of System Administration and whether any administrators need accessibility software are not specified.": 1,
+          "The requirements do not specify whether System Administration is the only path to log files or whether full log access must be available through accessibility software.": 1
+        },
+        "explicit_human_review_count": 0,
+        "explicit_human_review_rate_among_uncertain": 0.0,
+        "uncertain_without_review_flag": 41
+      },
+      "phase1_view_abstention": {
+        "semantic": {
+          "evaluated_pairs": 2875,
+          "compatible": 2760,
+          "incompatible": 52,
+          "uncertain": 63,
+          "missing": 0,
+          "abstention_rate": 0.0219
+        },
+        "logic": {
+          "evaluated_pairs": 2875,
+          "compatible": 2813,
+          "incompatible": 14,
+          "uncertain": 48,
+          "missing": 0,
+          "abstention_rate": 0.0167
+        },
+        "feasibility": {
+          "evaluated_pairs": 2875,
+          "compatible": 2825,
+          "incompatible": 31,
+          "uncertain": 19,
+          "missing": 0,
+          "abstention_rate": 0.0066
+        },
+        "goal": {
+          "evaluated_pairs": 2875,
+          "compatible": 2630,
+          "incompatible": 196,
+          "uncertain": 49,
+          "missing": 0,
+          "abstention_rate": 0.017
+        }
+      },
+      "phase1_pairs_with_any_abstention": 103,
+      "phase1_any_abstention_rate": 0.0358,
+      "phase1_vote_patterns": [
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 2607
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 118
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 19
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 17
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=uncertain; goal=uncertain",
+          "count": 15
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=incompatible",
+          "count": 14
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=incompatible; goal=incompatible",
+          "count": 12
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 10
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 9
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=uncertain",
+          "count": 7
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=compatible; goal=uncertain",
+          "count": 6
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 5
+        },
+        {
+          "pattern": "semantic=incompatible; logic=uncertain; feasibility=incompatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 4
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=uncertain; logic=uncertain; feasibility=compatible; goal=compatible",
+          "count": 3
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=uncertain",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=compatible; logic=uncertain; feasibility=compatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=uncertain; logic=compatible; feasibility=incompatible; goal=incompatible",
+          "count": 2
+        },
+        {
+          "pattern": "semantic=compatible; logic=compatible; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=compatible; logic=incompatible; feasibility=compatible; goal=compatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=compatible; feasibility=uncertain; goal=incompatible",
+          "count": 1
+        },
+        {
+          "pattern": "semantic=incompatible; logic=incompatible; feasibility=compatible; goal=incompatible",
+          "count": 1
+        }
+      ],
+      "representative_uncertain_cases": [
+        {
+          "pair_id": "1_66",
+          "route_type": "canonical_candidate",
+          "confidence": 0.3,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B is incomplete/fragmentary and lacks enough semantic content to compare reliably against Requirement A.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You speculate that Requirement B could imply a hard log size/retention limit that conflicts with A's need to display current log-file sizes, but the fragment '61. of data and transaction logs' provides no predicate or constraint. Without knowing what '61.' refers to, there is no basis to hypothesize a conflict, and your confidence of 0.6 is unjustifiably high given the complete lack of actionable information.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A is a clear dashboard/monitoring requirement. Requirement B is only the fragment '61. of data and transaction logs.' and does not state a complete condition, action, or constraint. Because B is not interpretable on its own, no grounded compatibility or incompatibility determination can be made from the provided text alone."
+        },
+        {
+          "pair_id": "2_40",
+          "route_type": "canonical_candidate",
+          "confidence": 0.45,
+          "needs_human_review": false,
+          "uncertainty_source": "The term 'real-time processing' is ambiguous in strictness and latency guarantees, and the requirements do not specify timing bounds or determinism expectations.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent claims that real-time processing and SQL databases 'coexist extensively in production systems' and asserts compatibility with 0.85 confidence, but it fails to address the critical distinction between soft real-time (common in production) and hard real-time (which may be implied by the requirement). The agent's coexistence path relies entirely on an unstated assumption that 'real-time' permits millisecond-to-second latency, which is not grounded in the requirement text.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "The pair does not create a grounded contradiction from the requirement text alone. 'Real-time processing' is undefined here, and the text does not say whether it means soft real-time or strict hard real-time with deterministic deadline guarantees. A fully relational, SQL-based database may be compatible with some real-time systems, but may be problematic for stricter interpretations. Because that key timing meaning is unspecified, compatibility cannot be determined from the pair alone."
+        },
+        {
+          "pair_id": "2_66",
+          "route_type": "canonical_candidate",
+          "confidence": 0.93,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B is incomplete/malformed and lacks a clear meaning.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.2,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.9,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "You swapped the labels of Requirement A and Requirement B. Requirement A is 'The system provides real-time processing' and Requirement B is '61. of data and transaction logs', but your analysis treats Requirement A as the fragment and Requirement B as real-time processing. This mislabeling undermines the entire engineering analysis.",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "Requirement A clearly states a real-time processing capability, but Requirement B is an incomplete fragment ('61. of data and transaction logs') with no clear predicate or constraint. Because B is not intelligible as a full requirement, no grounded compatibility or conflict judgment can be made from the text alone."
+        },
+        {
+          "pair_id": "4_66",
+          "route_type": "canonical_candidate",
+          "confidence": 0.21,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B is incomplete/ambiguous and lacks sufficient semantic content for pairwise analysis.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.2,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.2,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.4,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent claims no contradiction can be inferred because Requirement B is incomplete, but it fails to address the most consequential hidden assumption: that the fragment '61. of data and transaction logs' might impose a quantitative or structural constraint on logging that directly conflicts with Requirement A's error and undo logging capabilities.",
+            "rebuttal_verdict_revised": false
+          },
+          "arbiter_reasoning": "Requirement A is a complete functional requirement about record-set operations, deletion review, error logging, and undo. Requirement B is only the fragment '61. of data and transaction logs.' and does not state a complete condition, constraint, or obligation. Because no concrete meaning for B is recoverable from the text alone, no grounded logical compatibility or incompatibility judgment can be made from the pair."
+        },
+        {
+          "pair_id": "5_95",
+          "route_type": "canonical_candidate",
+          "confidence": 0.73,
+          "needs_human_review": false,
+          "uncertainty_source": "Potential conflict depends on an unstated assumption about whether any system administrative staff rely on accessibility software.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.6,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent claims the requirements are compatible by assuming accessibility blocking can be implemented at the client/interface layer without affecting the privilege-management core. However, Requirement A grants 'full visibility and control' to administrative staff, which implies the staff must be able to access and interact with the system administration interface. If that interface is blocked from screen readers, staff who rely on such software are denied access, contradicting the 'full' scope of Requirement A. The agent's coexistence path ignores this direct functional conflict by treating the interface and the privilege-management core as separable in a way that violates the plain meaning of 'full visibility and control.'",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "From the requirement text alone, A grants administrative staff full visibility and control of user privileges, while B forbids access to System Administration via screen-reading or other accessibility software. These are not directly contradictory on their face because B constrains an access method, not the privilege scope itself. A conflict arises only if one assumes some administrative staff must use accessibility software, which is not stated in the requirements."
+        },
+        {
+          "pair_id": "6_42",
+          "route_type": "canonical_candidate",
+          "confidence": 0.78,
+          "needs_human_review": false,
+          "uncertainty_source": "The requirement text does not define whether 'mobile application' and 'macOS-compatible client' can overlap.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "The agent asserts that 'standard mobile applications (iOS/Android) are not macOS-compatible clients' without considering that iOS apps can run natively on Apple Silicon Macs, making them macOS-compatible. This hidden assumption is unstated and likely false in the current Apple ecosystem.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Both requirements impose exclusive access constraints on the same function ('only through'). A limits access to a macOS-compatible client, while B limits access to a mobile application. From the text alone, it is not explicit whether these categories are mutually exclusive or whether a single client could satisfy both descriptions. Because incompatibility depends on an unstated assumption that a mobile application cannot also be macOS-compatible, and compatibility depends on an unstated assumption that it can, the pair is textually ambiguous."
+        },
+        {
+          "pair_id": "7_66",
+          "route_type": "canonical_candidate",
+          "confidence": 0.1,
+          "needs_human_review": false,
+          "uncertainty_source": "none",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.15,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.5,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "goal",
+            "challenge": "Your confidence of 0.9 is unjustifiably high given that Requirement B is a syntactically incomplete fragment with no intelligible predicate. High confidence in an 'uncertain' verdict is contradictory because the very lack of information that prevents conflict assessment also prevents any reliable confidence estimate.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A clearly requires a non-relational database back-end. Requirement B is an incomplete fragment ('61. of data and transaction logs.') and does not state a clear constraint or objective. Because B lacks an intelligible predicate, no grounded compatibility or conflict determination can be made from the text alone."
+        },
+        {
+          "pair_id": "11_66",
+          "route_type": "canonical_candidate",
+          "confidence": 0.3,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B is incomplete and semantically unclear.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.2,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.1,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "uncertain",
+              "confidence": 0.4,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.3,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "You assigned a confidence of 0.1, the lowest among all agents, yet your reasoning is essentially identical to the others—you all agree Requirement B is an unintelligible fragment and no conflict can be assessed. Why is your confidence so much lower than, say, semantic's 0.2 or feasibility's 0.4, when no agent has any additional information to justify a difference in certainty?",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A clearly requires logging data changes and supporting undo/revision control. Requirement B, as written ('61. of data and transaction logs.'), is an incomplete fragment with no clear predicate or constraint. Because B's meaning cannot be reliably determined from the provided text alone, compatibility cannot be assessed in a grounded way."
+        },
+        {
+          "pair_id": "16_88",
+          "route_type": "canonical_candidate",
+          "confidence": 0.62,
+          "needs_human_review": false,
+          "uncertainty_source": "Requirement B does not specify which users or roles can access the root shell.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "incompatible",
+              "confidence": 0.8,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "compatible",
+              "confidence": 0.8,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "incompatible",
+              "confidence": 0.95,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "incompatible",
+              "confidence": 0.9,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "logic",
+            "challenge": "The logic agent assumes root shell access is restricted to staff without any evidence from the requirements. Requirement B states 'System provides access to root shell' with no qualification about who can access it, while Requirement A explicitly differentiates between staff and patron privileges. The assumption that root access would only be available to staff is unsupported and directly contradicts the plain reading of Requirement B, which imposes no such restriction.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A clearly requires role-based field restrictions between staff and patrons. Requirement B only says the system provides access to a root shell, but does not state who receives that access or under what privilege model. If root shell is available to patrons, it would undermine A; if it is limited to a privileged administrative role, the two can coexist. The conflict therefore is not forced by the text alone."
+        },
+        {
+          "pair_id": "19_91",
+          "route_type": "canonical_candidate",
+          "confidence": 0.32,
+          "needs_human_review": false,
+          "uncertainty_source": "The requirements do not specify whether log files contain patron data or what 'full access' means in terms of authorized scope and security controls.",
+          "phase1_votes": {
+            "semantic": {
+              "verdict": "uncertain",
+              "confidence": 0.4,
+              "model": "deepseek-v4-flash"
+            },
+            "logic": {
+              "verdict": "uncertain",
+              "confidence": 0.5,
+              "model": "deepseek-v4-pro"
+            },
+            "feasibility": {
+              "verdict": "compatible",
+              "confidence": 0.85,
+              "model": "kimi-k2.6"
+            },
+            "goal": {
+              "verdict": "uncertain",
+              "confidence": 0.7,
+              "model": "qwen3.7-plus"
+            }
+          },
+          "phase2_cross_exam": {
+            "target": "feasibility",
+            "challenge": "The feasibility agent asserts that 'log files do not contain unencrypted patron data that would violate A if exposed via B' as a hidden assumption, but this assumption is not justified by the requirements. Requirement B mandates 'full access to all log files' without any stated restrictions on content or access control, and Requirement A mandates security of patron data in all transfers. If log files capture transfer details (a common logging practice), then full access to those logs could directly expose patron data, creating a concrete conflict. The feasibility agent dismisses this by assuming logs are either sanitized or access is role-restricted, but neither condition is specified in the requirements.",
+            "rebuttal_verdict_revised": true
+          },
+          "arbiter_reasoning": "Requirement A requires patron data to be secure during transfers to and from the system. Requirement B requires full access to all log files. From the requirement text alone, there is no explicit statement that log files contain patron data, that log access is unrestricted to unauthorized parties, or that log access affects transfer security. A conflict is therefore not grounded by the stated requirements alone, but compatibility also cannot be confirmed without assumptions about log contents and access scope."
+        }
+      ]
+    }
+  ]
+}
