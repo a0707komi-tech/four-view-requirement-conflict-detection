@@ -39,7 +39,10 @@
         },
         "explicit_human_review_count": 95,
         "explicit_human_review_rate_among_uncertain": 0.9794,
-        "uncertain_without_review_flag": 2
+        "uncertain_without_review_flag": 2,
+        "recommended_review_rows": 97,
+        "recommended_unique_review_units": 50,
+        "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
       },
       "phase1_view_abstention": {
         "semantic": {
@@ -48,7 +51,13 @@
           "incompatible": 46,
           "uncertain": 59,
           "missing": 0,
-          "abstention_rate": 0.0758
+          "abstention_rate": 0.0758,
+          "single_view_abstention": 36,
+          "multiple_view_abstention": 23,
+          "targeted_by_da": 2,
+          "final_compatible": 27,
+          "final_incompatible": 7,
+          "final_uncertain": 25
         },
         "logic": {
           "evaluated_pairs": 778,
@@ -56,7 +65,13 @@
           "incompatible": 47,
           "uncertain": 94,
           "missing": 0,
-          "abstention_rate": 0.1208
+          "abstention_rate": 0.1208,
+          "single_view_abstention": 70,
+          "multiple_view_abstention": 24,
+          "targeted_by_da": 25,
+          "final_compatible": 57,
+          "final_incompatible": 5,
+          "final_uncertain": 32
         },
         "feasibility": {
           "evaluated_pairs": 778,
@@ -64,7 +79,13 @@
           "incompatible": 75,
           "uncertain": 12,
           "missing": 0,
-          "abstention_rate": 0.0154
+          "abstention_rate": 0.0154,
+          "single_view_abstention": 7,
+          "multiple_view_abstention": 5,
+          "targeted_by_da": 6,
+          "final_compatible": 7,
+          "final_incompatible": 2,
+          "final_uncertain": 3
         },
         "goal": {
           "evaluated_pairs": 778,
@@ -72,7 +93,13 @@
           "incompatible": 103,
           "uncertain": 2,
           "missing": 0,
-          "abstention_rate": 0.0026
+          "abstention_rate": 0.0026,
+          "single_view_abstention": 1,
+          "multiple_view_abstention": 1,
+          "targeted_by_da": 1,
+          "final_compatible": 2,
+          "final_incompatible": 0,
+          "final_uncertain": 0
         }
       },
       "phase1_pairs_with_any_abstention": 139,
@@ -616,7 +643,10 @@
         },
         "explicit_human_review_count": 4,
         "explicit_human_review_rate_among_uncertain": 1.0,
-        "uncertain_without_review_flag": 0
+        "uncertain_without_review_flag": 0,
+        "recommended_review_rows": 4,
+        "recommended_unique_review_units": 3,
+        "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
       },
       "phase1_view_abstention": {
         "semantic": {
@@ -625,7 +655,13 @@
           "incompatible": 14,
           "uncertain": 11,
           "missing": 0,
-          "abstention_rate": 0.0185
+          "abstention_rate": 0.0185,
+          "single_view_abstention": 8,
+          "multiple_view_abstention": 3,
+          "targeted_by_da": 2,
+          "final_compatible": 8,
+          "final_incompatible": 1,
+          "final_uncertain": 2
         },
         "logic": {
           "evaluated_pairs": 594,
@@ -633,7 +669,13 @@
           "incompatible": 15,
           "uncertain": 26,
           "missing": 0,
-          "abstention_rate": 0.0438
+          "abstention_rate": 0.0438,
+          "single_view_abstention": 23,
+          "multiple_view_abstention": 3,
+          "targeted_by_da": 12,
+          "final_compatible": 24,
+          "final_incompatible": 1,
+          "final_uncertain": 1
         },
         "feasibility": {
           "evaluated_pairs": 594,
@@ -641,7 +683,13 @@
           "incompatible": 52,
           "uncertain": 0,
           "missing": 0,
-          "abstention_rate": 0.0
+          "abstention_rate": 0.0,
+          "single_view_abstention": 0,
+          "multiple_view_abstention": 0,
+          "targeted_by_da": 0,
+          "final_compatible": 0,
+          "final_incompatible": 0,
+          "final_uncertain": 0
         },
         "goal": {
           "evaluated_pairs": 594,
@@ -649,7 +697,13 @@
           "incompatible": 39,
           "uncertain": 0,
           "missing": 0,
-          "abstention_rate": 0.0
+          "abstention_rate": 0.0,
+          "single_view_abstention": 0,
+          "multiple_view_abstention": 0,
+          "targeted_by_da": 0,
+          "final_compatible": 0,
+          "final_incompatible": 0,
+          "final_uncertain": 0
         }
       },
       "phase1_pairs_with_any_abstention": 34,
@@ -916,7 +970,10 @@
         },
         "explicit_human_review_count": 0,
         "explicit_human_review_rate_among_uncertain": 0.0,
-        "uncertain_without_review_flag": 18
+        "uncertain_without_review_flag": 18,
+        "recommended_review_rows": 18,
+        "recommended_unique_review_units": 18,
+        "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
       },
       "phase1_view_abstention": {
         "semantic": {
@@ -925,7 +982,13 @@
           "incompatible": 19,
           "uncertain": 11,
           "missing": 0,
-          "abstention_rate": 0.012
+          "abstention_rate": 0.012,
+          "single_view_abstention": 6,
+          "multiple_view_abstention": 5,
+          "targeted_by_da": 4,
+          "final_compatible": 5,
+          "final_incompatible": 0,
+          "final_uncertain": 6
         },
         "logic": {
           "evaluated_pairs": 913,
@@ -933,7 +996,13 @@
           "incompatible": 9,
           "uncertain": 22,
           "missing": 0,
-          "abstention_rate": 0.0241
+          "abstention_rate": 0.0241,
+          "single_view_abstention": 16,
+          "multiple_view_abstention": 6,
+          "targeted_by_da": 12,
+          "final_compatible": 14,
+          "final_incompatible": 1,
+          "final_uncertain": 7
         },
         "feasibility": {
           "evaluated_pairs": 913,
@@ -941,7 +1010,13 @@
           "incompatible": 5,
           "uncertain": 4,
           "missing": 0,
-          "abstention_rate": 0.0044
+          "abstention_rate": 0.0044,
+          "single_view_abstention": 2,
+          "multiple_view_abstention": 2,
+          "targeted_by_da": 2,
+          "final_compatible": 2,
+          "final_incompatible": 1,
+          "final_uncertain": 1
         },
         "goal": {
           "evaluated_pairs": 913,
@@ -949,7 +1024,13 @@
           "incompatible": 40,
           "uncertain": 18,
           "missing": 0,
-          "abstention_rate": 0.0197
+          "abstention_rate": 0.0197,
+          "single_view_abstention": 11,
+          "multiple_view_abstention": 7,
+          "targeted_by_da": 11,
+          "final_compatible": 15,
+          "final_incompatible": 0,
+          "final_uncertain": 3
         }
       },
       "phase1_pairs_with_any_abstention": 45,
@@ -1441,7 +1522,10 @@
         },
         "explicit_human_review_count": 0,
         "explicit_human_review_rate_among_uncertain": 0.0,
-        "uncertain_without_review_flag": 9
+        "uncertain_without_review_flag": 9,
+        "recommended_review_rows": 9,
+        "recommended_unique_review_units": 9,
+        "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
       },
       "phase1_view_abstention": {
         "semantic": {
@@ -1450,7 +1534,13 @@
           "incompatible": 19,
           "uncertain": 8,
           "missing": 0,
-          "abstention_rate": 0.0122
+          "abstention_rate": 0.0122,
+          "single_view_abstention": 6,
+          "multiple_view_abstention": 2,
+          "targeted_by_da": 2,
+          "final_compatible": 4,
+          "final_incompatible": 0,
+          "final_uncertain": 4
         },
         "logic": {
           "evaluated_pairs": 654,
@@ -1458,7 +1548,13 @@
           "incompatible": 8,
           "uncertain": 13,
           "missing": 0,
-          "abstention_rate": 0.0199
+          "abstention_rate": 0.0199,
+          "single_view_abstention": 11,
+          "multiple_view_abstention": 2,
+          "targeted_by_da": 8,
+          "final_compatible": 8,
+          "final_incompatible": 1,
+          "final_uncertain": 4
         },
         "feasibility": {
           "evaluated_pairs": 654,
@@ -1466,7 +1562,13 @@
           "incompatible": 10,
           "uncertain": 0,
           "missing": 0,
-          "abstention_rate": 0.0
+          "abstention_rate": 0.0,
+          "single_view_abstention": 0,
+          "multiple_view_abstention": 0,
+          "targeted_by_da": 0,
+          "final_compatible": 0,
+          "final_incompatible": 0,
+          "final_uncertain": 0
         },
         "goal": {
           "evaluated_pairs": 654,
@@ -1474,7 +1576,13 @@
           "incompatible": 41,
           "uncertain": 2,
           "missing": 0,
-          "abstention_rate": 0.0031
+          "abstention_rate": 0.0031,
+          "single_view_abstention": 0,
+          "multiple_view_abstention": 2,
+          "targeted_by_da": 0,
+          "final_compatible": 0,
+          "final_incompatible": 0,
+          "final_uncertain": 2
         }
       },
       "phase1_pairs_with_any_abstention": 20,
@@ -1946,7 +2054,10 @@
         },
         "explicit_human_review_count": 0,
         "explicit_human_review_rate_among_uncertain": 0.0,
-        "uncertain_without_review_flag": 41
+        "uncertain_without_review_flag": 41,
+        "recommended_review_rows": 41,
+        "recommended_unique_review_units": 41,
+        "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
       },
       "phase1_view_abstention": {
         "semantic": {
@@ -1955,7 +2066,13 @@
           "incompatible": 52,
           "uncertain": 63,
           "missing": 0,
-          "abstention_rate": 0.0219
+          "abstention_rate": 0.0219,
+          "single_view_abstention": 26,
+          "multiple_view_abstention": 37,
+          "targeted_by_da": 11,
+          "final_compatible": 28,
+          "final_incompatible": 0,
+          "final_uncertain": 35
         },
         "logic": {
           "evaluated_pairs": 2875,
@@ -1963,7 +2080,13 @@
           "incompatible": 14,
           "uncertain": 48,
           "missing": 0,
-          "abstention_rate": 0.0167
+          "abstention_rate": 0.0167,
+          "single_view_abstention": 17,
+          "multiple_view_abstention": 31,
+          "targeted_by_da": 14,
+          "final_compatible": 15,
+          "final_incompatible": 4,
+          "final_uncertain": 29
         },
         "feasibility": {
           "evaluated_pairs": 2875,
@@ -1971,7 +2094,13 @@
           "incompatible": 31,
           "uncertain": 19,
           "missing": 0,
-          "abstention_rate": 0.0066
+          "abstention_rate": 0.0066,
+          "single_view_abstention": 2,
+          "multiple_view_abstention": 17,
+          "targeted_by_da": 6,
+          "final_compatible": 2,
+          "final_incompatible": 0,
+          "final_uncertain": 17
         },
         "goal": {
           "evaluated_pairs": 2875,
@@ -1979,7 +2108,13 @@
           "incompatible": 196,
           "uncertain": 49,
           "missing": 0,
-          "abstention_rate": 0.017
+          "abstention_rate": 0.017,
+          "single_view_abstention": 19,
+          "multiple_view_abstention": 30,
+          "targeted_by_da": 21,
+          "final_compatible": 20,
+          "final_incompatible": 0,
+          "final_uncertain": 29
         }
       },
       "phase1_pairs_with_any_abstention": 103,

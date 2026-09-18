@@ -1,0 +1,35 @@
+% Requires \usepackage{booktabs}.
+\begin{table*}[t]
+\centering
+\caption{Final uncertainty outcomes and review workload. Uncertainty rate is computed over stored final verdict rows; review units collapse canonical aliases to their source pair.}
+\label{tab:uncertainty-final}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & Final rows & Uncertain & Rate (\%) & Review units \\
+\midrule
+ETCS-GOLD & 1599 & 97 & 6.07 & 50 \\
+OpenAPI Specification 3.0 & 870 & 4 & 0.46 & 3 \\
+promise-project2 & 913 & 18 & 1.97 & 18 \\
+Broker-All & 654 & 9 & 1.38 & 9 \\
+Library-Gold & 2875 & 41 & 1.43 & 41 \\
+\midrule
+Overall & 6911 & 169 & 2.45 & 121 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{Phase-1 view abstention and downstream resolution across canonical candidates. C, I, and U denote final compatible, incompatible, and uncertain outcomes.}
+\label{tab:uncertainty-views}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+View & Evaluated & Abstained & Rate (\%) & Single & Multi & DA target & Final C & Final I & Final U \\
+\midrule
+Semantic & 5814 & 152 & 2.61 & 82 & 70 & 21 & 72 & 8 & 72 \\
+Logic & 5814 & 203 & 3.49 & 137 & 66 & 71 & 118 & 12 & 73 \\
+Feasibility & 5814 & 35 & 0.60 & 11 & 24 & 14 & 11 & 3 & 21 \\
+Goal & 5814 & 71 & 1.22 & 31 & 40 & 33 & 37 & 0 & 34 \\
+\bottomrule
+\end{tabular}
+\end{table*}

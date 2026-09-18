@@ -17,7 +17,7 @@ This report is generated offline from the stored final verdicts and agent record
 | `compatible` | 1420 | 88.81% |
 | `incompatible` | 82 | 5.13% |
 | `uncertain` | 97 | 6.07% |
-| `duplicate_group_rule` route | 20 | 1.25% |
+| `duplicate_group_rule` route (subset of incompatible) | 20 | subset |
 
 ## Uncertainty and Human Review
 
@@ -26,8 +26,9 @@ This report is generated offline from the stored final verdicts and agent record
 | Final `uncertain` | 97 | 6.07% of final rows |
 | `needs_human_review=true` among uncertain rows | 95 | 97.94% of uncertain rows |
 | Uncertain rows without review flag | 2 | - |
+| Recommended review queue | 97 rows / 50 unique units | all final uncertain rows |
 
-Uncertainty is reported exactly as stored. The report does not infer a human-review flag from the verdict; the finalizer's stored `needs_human_review` value is shown separately.
+Uncertainty is reported exactly as stored. The legacy `needs_human_review` value is retained for provenance, but the reporting policy sends every final uncertain verdict to review. Canonical aliases share their source pair's review unit.
 
 ## Final Uncertainty by Route and Stage
 
@@ -40,12 +41,14 @@ Uncertainty is reported exactly as stored. The report does not infer a human-rev
 
 ## Phase-1 View Abstention
 
-| View | Evaluated pairs | Compatible | Incompatible | Uncertain | Missing | Abstention rate |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| semantic | 778 | 673 | 46 | 59 | 0 | 7.58% |
-| logic | 778 | 637 | 47 | 94 | 0 | 12.08% |
-| feasibility | 778 | 691 | 75 | 12 | 0 | 1.54% |
-| goal | 778 | 673 | 103 | 2 | 0 | 0.26% |
+| View | Evaluated | Uncertain | Rate | Single-view | Multi-view | DA target | Final C | Final I | Final U |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| semantic | 778 | 59 | 7.58% | 36 | 23 | 2 | 27 | 7 | 25 |
+| logic | 778 | 94 | 12.08% | 70 | 24 | 25 | 57 | 5 | 32 |
+| feasibility | 778 | 12 | 1.54% | 7 | 5 | 6 | 7 | 2 | 3 |
+| goal | 778 | 2 | 0.26% | 1 | 1 | 1 | 2 | 0 | 0 |
+
+`Single-view` means that this was the only Phase-1 view to abstain; `multi-view` means at least one other view also abstained. `Final C/I/U` reports the final compatible, incompatible, or uncertain outcome after disagreement handling for the pairs on which that view abstained.
 
 Canonical candidate pairs with at least one Phase-1 abstention: **139** (17.87%).
 

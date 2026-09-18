@@ -57,6 +57,6 @@ The evaluation command also regenerates the uncertainty and abstention reports. 
 python scripts/generate_uncertainty_reports.py
 ```
 
-Final uncertainty is measured over all final verdict rows. Phase-1 view abstention rates are measured over canonical candidates with stored Phase-1 votes; canonical aliases are inherited results and are not counted as new view decisions. The report preserves the stored `needs_human_review` flag and does not infer or rewrite it.
+Final uncertainty is measured over all final verdict rows. Phase-1 view abstention rates are measured over canonical candidates with stored Phase-1 votes; canonical aliases are inherited results and are not counted as new view decisions. The report preserves the stored `needs_human_review` flag for provenance but recommends every final `uncertain` verdict for human review. Alias rows are collapsed to their source pair when review workload is counted.
 
 Provider Batch jobs can take longer than synchronous calls to become available. Re-running the scheduler resumes from persisted successful records rather than deleting a run.

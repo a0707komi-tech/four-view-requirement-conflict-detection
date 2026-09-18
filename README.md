@@ -60,6 +60,8 @@ Mean F1 across the five datasets is **0.80**.
 
 The repository includes final verdicts, TP/FP/FN reports, uncertainty and abstention analyses, and effective intermediate outputs for all seven agents. See [results/README.md](results/README.md) and [results/summary/uncertainty_summary.md](results/summary/uncertainty_summary.md).
 
+Paper-ready uncertainty material is provided in [paper-uncertainty-reporting.md](docs/paper-uncertainty-reporting.md), [paper-uncertainty-tables.tex](docs/paper-uncertainty-tables.tex), and [reviewer-response-uncertainty.md](docs/reviewer-response-uncertainty.md).
+
 ## Installation
 
 ```powershell

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "four-view-requirement-conflict-detection"
-version = "1.0.0"
+version = "1.1.0"
 description = "A four-view multi-agent framework for requirement conflict detection."
 readme = "README.md"
 requires-python = ">=3.11"

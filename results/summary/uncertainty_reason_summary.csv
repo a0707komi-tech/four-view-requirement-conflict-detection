@@ -1,0 +1,73 @@
+dataset,stored_uncertainty_source,count
+ETCS-GOLD,unverifiable_assumption,55
+ETCS-GOLD,missing_domain_knowledge,22
+ETCS-GOLD,ambiguous_requirement,18
+ETCS-GOLD,verifiable_assumption,2
+OpenAPI Specification 3.0,unverifiable_assumption,4
+promise-project2,"Requirement A lacks a defined response-time threshold, and Requirement B does not specify whether retrieval is synchronous, asynchronous, or resource-isolated.",1
+promise-project2,"Requirement A uses an undefined subjective threshold ('acceptable time'), so it is unclear whether Requirement B's 60-second limit satisfies it.",1
+promise-project2,"Whether CMA report generation requires internet-dependent data/services, especially during offline mode, is unspecified.",1
+promise-project2,Whether hourly synchronization requires internet access and whether offline mode prohibits or merely defers synchronization is not specified.,1
+promise-project2,Calling technology and the scope of offline mode are unspecified.,1
+promise-project2,Role-term ambiguity: the requirements do not define whether 'real estate agent' and 'registered realtor' denote the same allowed user class.,1
+promise-project2,none,1
+promise-project2,term ambiguity: 'agent' is not explicitly defined relative to 'registered realtor',1
+promise-project2,Whether 'buyer' is necessarily a non-realtor distinct role is not explicitly defined in the requirement text.,1
+promise-project2,"The requirements do not explicitly state that the seller agent is necessarily a registered realtor, nor explicitly tie the 'mark as sold' action to system access.",1
+promise-project2,The relationship between 'agent' and 'registered realtor' is unspecified in the requirement text.,1
+promise-project2,"Requirement B's temporal condition ('appointments made less than 24 hours') is underspecified, and the requirements do not define whether A applies universally without exceptions.",1
+promise-project2,Ambiguity in 'appointments made less than 24 hours' and whether B's 'notifications' covers the response-notification event in A.,1
+promise-project2,Ambiguity in the scope of 'accept' and whether Requirement B refers to posts newly accepted by the same system versus legacy/imported existing MLS posts.,1
+promise-project2,Ambiguity in whether 'removed' means no longer viewable and whether 'all MLS listings' includes only active listings or also archived/historical ones.,1
+promise-project2,ambiguity over whether Requirement B's view-only zone access right is exclusive or can coexist with other rights that satisfy Requirement A,1
+promise-project2,Whether 'update all MLS listing properties' includes changing listing status to 'sold' in a way that would bypass Requirement A's authorization rule.,1
+promise-project2,Whether the access right in Requirement B is exclusive or can coexist with other rights is not specified.,1
+Broker-All,Whether 'associated data' includes CDR and whether deleting subscriber accounts affects data required for annual broker invoicing are not specified.,1
+Broker-All,"The terms 'broker account' and 'subscriber account' are not defined as disjoint, and the storage location of invoices created for broker accounts is not specified.",1
+Broker-All,Whether 'associated data' includes the CDR records required by monthly invoicing is not specified.,1
+Broker-All,Requirement B is ambiguous about whether 'associated data' includes issued invoices.,1
+Broker-All,Whether 'subscribers' accounts' in Requirement A includes closed accounts is unspecified.,1
+Broker-All,The term 'associated data' is undefined and may or may not include invoices.,1
+Broker-All,Ambiguity about whether 'identification numbers' in A and the 'unique number for subscription account' in B refer to the same identifier and how the generated number is structured.,1
+Broker-All,The requirements do not specify whether invoices constitute the required payment history/status records or whether deletion preserves those records elsewhere.,1
+Broker-All,"Ambiguity over whether deletion counts as modifying data in a closed account, and whether Requirement B applies to closed accounts.",1
+Library-Gold,Requirement B is incomplete/fragmentary and lacks enough semantic content to compare reliably against Requirement A.,1
+Library-Gold,"The term 'real-time processing' is ambiguous in strictness and latency guarantees, and the requirements do not specify timing bounds or determinism expectations.",1
+Library-Gold,Requirement B is incomplete/malformed and lacks a clear meaning.,1
+Library-Gold,Requirement B is incomplete/ambiguous and lacks sufficient semantic content for pairwise analysis.,1
+Library-Gold,Potential conflict depends on an unstated assumption about whether any system administrative staff rely on accessibility software.,1
+Library-Gold,The requirement text does not define whether 'mobile application' and 'macOS-compatible client' can overlap.,1
+Library-Gold,none,2
+Library-Gold,Requirement B is incomplete and semantically unclear.,1
+Library-Gold,Requirement B does not specify which users or roles can access the root shell.,1
+Library-Gold,The requirements do not specify whether log files contain patron data or what 'full access' means in terms of authorized scope and security controls.,1
+Library-Gold,Requirement B is incomplete and lacks a clear predicate or intent.,1
+Library-Gold,Requirement B is incomplete and semantically ambiguous.,1
+Library-Gold,The term 'live' in Requirement A is semantically ambiguous relative to 'real-time processing' in Requirement B.,1
+Library-Gold,Requirement B is incomplete and semantically under-specified.,1
+Library-Gold,The term 'root shell' is undefined and it is unclear whether it must be native to the Windows server or may be provided through another component or hosted environment.,1
+Library-Gold,Requirement B is incomplete and ambiguous.,1
+Library-Gold,Requirement B is incomplete and lacks enough semantic content to compare against Requirement A.,1
+Library-Gold,"The external Library Automation System's data model/interface is unspecified, so 'relies on the data structures' may or may not constrain the module's back-end technology.",1
+Library-Gold,Requirement B is incomplete/malformed and cannot be semantically compared to Requirement A.,1
+Library-Gold,Requirement B is incomplete/fragmentary and lacks enough meaning to compare against Requirement A.,1
+Library-Gold,The requirements do not specify whether log files contain record numbers or whether full log access bypasses the user/group controls required for record numbers.,1
+Library-Gold,Requirement B is underspecified about the subject of 'full access' to log files.,1
+Library-Gold,Ambiguity over whether 'searches and reports ... during open hours' implies real-time interactive processing or can be satisfied by batch execution.,1
+Library-Gold,"Whether 'log files' fall within the 'tables and fields' governed by Requirement A, and who receives 'full access' in Requirement B, is not specified.",1
+Library-Gold,"Requirement B is incomplete/truncated, so its meaning cannot be reliably determined from the provided text alone.",1
+Library-Gold,Requirement B is incomplete/truncated and lacks a clear propositional meaning.,1
+Library-Gold,Requirement A is incomplete and lacks sufficient context to interpret.,1
+Library-Gold,"Requirement A is incomplete/ambiguous, so its actual constraint or intent is unknown.",1
+Library-Gold,"Requirement A is incomplete/underspecified, so its intended requirement cannot be determined from the provided text.",1
+Library-Gold,Requirement A is incomplete/fragmentary and lacks a clear predicate or requirement meaning.,1
+Library-Gold,"Requirement A is incomplete/ambiguous, so its operative meaning is not recoverable from the provided text.",1
+Library-Gold,Requirement A is incomplete/fragmented and missing its key predicate.,1
+Library-Gold,Requirement A is malformed/incomplete and lacks a clear predicate or obligation.,1
+Library-Gold,Requirement A is incomplete/ambiguous and lacks enough semantic content to assess interaction with Requirement B.,1
+Library-Gold,Requirement A is incomplete/underspecified.,1
+Library-Gold,Requirement A is grammatically incomplete and lacks enough context to determine what it requires about data and transaction logs.,1
+Library-Gold,Requirement A is fragmentary/ambiguous and lacks enough semantic content for grounded comparison.,1
+Library-Gold,Requirement A is incomplete and lacks sufficient context for interpretation.,1
+Library-Gold,Whether Requirement A's functions are part of System Administration and whether any administrators need accessibility software are not specified.,1
+Library-Gold,The requirements do not specify whether System Administration is the only path to log files or whether full log access must be available through accessibility software.,1

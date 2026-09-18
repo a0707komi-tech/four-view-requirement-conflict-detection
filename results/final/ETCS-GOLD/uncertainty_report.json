@@ -37,7 +37,10 @@
     },
     "explicit_human_review_count": 95,
     "explicit_human_review_rate_among_uncertain": 0.9794,
-    "uncertain_without_review_flag": 2
+    "uncertain_without_review_flag": 2,
+    "recommended_review_rows": 97,
+    "recommended_unique_review_units": 50,
+    "recommended_review_policy": "Every final uncertain verdict is an abstention and enters the review queue; canonical aliases share the source pair's review unit."
   },
   "phase1_view_abstention": {
     "semantic": {
@@ -46,7 +49,13 @@
       "incompatible": 46,
       "uncertain": 59,
       "missing": 0,
-      "abstention_rate": 0.0758
+      "abstention_rate": 0.0758,
+      "single_view_abstention": 36,
+      "multiple_view_abstention": 23,
+      "targeted_by_da": 2,
+      "final_compatible": 27,
+      "final_incompatible": 7,
+      "final_uncertain": 25
     },
     "logic": {
       "evaluated_pairs": 778,
@@ -54,7 +63,13 @@
       "incompatible": 47,
       "uncertain": 94,
       "missing": 0,
-      "abstention_rate": 0.1208
+      "abstention_rate": 0.1208,
+      "single_view_abstention": 70,
+      "multiple_view_abstention": 24,
+      "targeted_by_da": 25,
+      "final_compatible": 57,
+      "final_incompatible": 5,
+      "final_uncertain": 32
     },
     "feasibility": {
       "evaluated_pairs": 778,
@@ -62,7 +77,13 @@
       "incompatible": 75,
       "uncertain": 12,
       "missing": 0,
-      "abstention_rate": 0.0154
+      "abstention_rate": 0.0154,
+      "single_view_abstention": 7,
+      "multiple_view_abstention": 5,
+      "targeted_by_da": 6,
+      "final_compatible": 7,
+      "final_incompatible": 2,
+      "final_uncertain": 3
     },
     "goal": {
       "evaluated_pairs": 778,
@@ -70,7 +91,13 @@
       "incompatible": 103,
       "uncertain": 2,
       "missing": 0,
-      "abstention_rate": 0.0026
+      "abstention_rate": 0.0026,
+      "single_view_abstention": 1,
+      "multiple_view_abstention": 1,
+      "targeted_by_da": 1,
+      "final_compatible": 2,
+      "final_incompatible": 0,
+      "final_uncertain": 0
     }
   },
   "phase1_pairs_with_any_abstention": 139,
